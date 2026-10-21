@@ -32,4 +32,9 @@ la ruta primcipal es: rueda-libre dentro esta index.html, img y paginas
 img es una carpeta que trae todas las imagenes de todo el proyecto hasta el momento
 paginas es una carpeta que trae reservas.html y tarifas.html
 
+ENTREGABLE 2
+
+no tengo div ya que para eso ya tengo la sintaxys con selection y solo tengo un span que  que es en reservas ya que es un texto pequeño
+y pienso que mucha lo omitiria por eso le puse el span 
+
 
