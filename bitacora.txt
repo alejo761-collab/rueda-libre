@@ -28,7 +28,8 @@ HTML**:** cumplirá el rol de crearme todos los títulos y todo el cuerpo de la 
 CSS: cumplirá el rol de dar un buen diseño a la pagina, de ponerla bonita, por ejemplo cambiar el color del titulo por rojo
 JS: JavaScript me dará funcionalidad a la pagina que vaya a crear, por ejemplo darle función a los botones que en un futuro vaya a poner
 
-
-
+la ruta primcipal es: rueda-libre dentro esta index.html, img y paginas
+img es una carpeta que trae todas las imagenes de todo el proyecto hasta el momento
+paginas es una carpeta que trae reservas.html y tarifas.html
 
 
