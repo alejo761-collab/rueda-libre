@@ -7,6 +7,8 @@
 <title>  "Rueda Libre | Reservas" </title>
 </head>
 <body>
+    <main>
+        <section>
     <h1>Reserva tu bicicleta</h1>
     <span>
     <p>No dejes pasar esta oportunidad de explorar nuestra ciudad en bicicleta</p>
@@ -36,18 +38,20 @@
     </di>
     </aside>
     <p>Escribenos a nuestro correo electronico:<a href="mailto:ruedalibre123@gmail.com">ruedalibre123@gmail.com</a></p><br>
+        </section>
+        <section>
     <h2>Formulario de reserva</h2>
     <form action="procesar_reserva.php" method="post">
         <fieldset>
             <legend>Tus datos</legend>
             <div>
                 <label for="nombre">nombre completo</label><br>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" minlength="3"  required>
             </div>
             <br>
             <div>
                 <label for="documento">Numero de Documento</label><br>
-                <input type="text" id="documento" name="documento" required>
+                <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}" title="solo números, entre 6 y 10 dígitos." required>
             </div>
             <br>
             <div>
@@ -57,7 +61,7 @@
             <br>
             <div>
                 <label for="celular">Numero de celular</label><br>
-                <input type="tel" id="celular" name="celular" required>
+                <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}" title="10 dígitos y debe empezar por 3" required>
             </div>
 
         </fieldset>
@@ -66,7 +70,7 @@
             <legend> Tu alquiler</legend>
             <div>
                 <label for="Fecha de alquiler"> Fecha de alquiler</label><br> 
-                <input type="date" id="Fecha" name="fecha" required>
+                <input type="date" id="Fecha" name="fecha" min="2026-11-01" max="2026-12-31"  required>
             </div>
             <br>
             <div>
@@ -91,7 +95,7 @@
             <br>
             <div>
                 <label for="cantidad">Cantidad de bicicletas</label>
-                <input type="number" id="cantidad" name="cantidad" required>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="6" required>
 
             </div>
             <br>
@@ -111,7 +115,7 @@
             <legend>Confirmación</legend>
             <div>
                 <label for="comentarios">Comentarios adicionales</label><br>
-                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"maxlength="300"></textarea>
             </div>
             <br>
             <div>
@@ -123,6 +127,8 @@
             <button type="submit">Enviar reserva</button>
         </div>
     </form>
+        </section>
+    </main>
                                                                                                                                                 
     
      <hr>
