@@ -32,9 +32,23 @@ la ruta primcipal es: rueda-libre dentro esta index.html, img y paginas
 img es una carpeta que trae todas las imagenes de todo el proyecto hasta el momento
 paginas es una carpeta que trae reservas.html y tarifas.html
 
-ENTREGABLE 2
-
+ENTREGABLE dia 2
+1.)
 no tengo div ya que para eso ya tengo la sintaxys con selection y solo tengo un span que  que es en reservas ya que es un texto pequeño
 y pienso que mucha lo omitiria por eso le puse el span 
+
+2.)
+select y option(lista desplegable): esta la escogi para hacer el tipo de eleccion de bicileta que el clienta quiera pedir
+y me sirve mucho esta ya que como el mismo nombre lo dice crea una lista de opciones que el cliente puede escoger
+y esta se hace con select y option, y los demas caracteres
+
+checkbox:este lo implemente para poner una casilla de verificacion obligatoria lo que hace que el cliente 
+tenga que marcarla para que el formulario pueda enviar 
+
+junto con el input escogi el tipo date ya que este me permite tener un calendario disponible
+al momento de que el cliente quiera hacer la reservacion y asi es mas facil de utilizar
+
+
+
 
 
