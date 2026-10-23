@@ -49,6 +49,89 @@ junto con el input escogi el tipo date ya que este me permite tener un calendari
 al momento de que el cliente quiera hacer la reservacion y asi es mas facil de utilizar
 
 
+ PRUEBAS - VALIDACIÓN NATIVA
+
+
+
+1. Nombre completo (Vacío)
+
+   - Dato de prueba: [Vacío]
+
+   - Resultado esperado: Bloqueo por campo obligatorio.
+
+   - Resultado obtenido: Bloqueado correctamente (required).
+
+
+
+2. Nombre completo (Menor a 3 caracteres)
+
+   - Dato de prueba: "Lu"
+
+   - Resultado esperado: Bloqueo por mínimo de caracteres.
+
+   - Resultado obtenido: Bloqueado correctamente (minlength).
+
+
+
+3. Documento (Menos de 6 dígitos)
+
+   - Dato de prueba: "12345"
+
+   - Resultado esperado: Bloqueo por longitud mínima.
+
+   - Resultado obtenido: Bloqueado correctamente (pattern).
+
+
+
+4. Documento (Con letras)
+
+   - Dato de prueba: "1234A56"
+
+   - Resultado esperado: Bloqueo por caracteres no numéricos.
+
+   - Resultado obtenido: Bloqueado correctamente (pattern).
+
+
+
+5. Correo (Sin formato válido)
+
+   - Dato de prueba: "usuario.com"
+
+   - Resultado esperado: Bloqueo por falta de '@'.
+
+   - Resultado obtenido: Bloqueado correctamente (type="email").
+
+
+
+6. Celular (No empieza por 3)
+
+   - Dato de prueba: "1234567890"
+
+   - Resultado esperado: Bloqueo por no iniciar con 3.
+
+   - Resultado obtenido: Bloqueado correctamente (pattern).
+
+
+
+7. Celular (Incompleto)
+
+   - Dato de prueba: "300123"
+
+   - Resultado esperado: Bloqueo por no tener 10 dígitos.
+
+   - Resultado obtenido: Bloqueado correctamente (pattern).
+
+
+
+8. Fecha del alquiler (Fuera de rango)
+
+   - Dato de prueba: "2026-10-31"
+
+   - Resultado esperado: Bloqueo por fecha anterior al 1 de noviembre.
+
+   - Resultado obtenido: Bloqueado correctamente (min).
+   
+
 
 
 
