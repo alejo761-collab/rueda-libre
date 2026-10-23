@@ -130,6 +130,10 @@ al momento de que el cliente quiera hacer la reservacion y asi es mas facil de u
    - Resultado esperado: Bloqueo por fecha anterior al 1 de noviembre.
 
    - Resultado obtenido: Bloqueado correctamente (min).
+
+   mirando el codigo puse en index unos div que ya con el conocimiento que tengo ahora pinso que es donde deben de estar, los puse despues
+   de varios section y los dividi entre div aparte de eso le meti otra imagen con una ruta mas especifica tipo mapa que el cliente puede ver.
+   en tarifas.html tambien hice lo mismo puse section y dentros de estos puse los div ya que tarifas la tenia casi sin nada de esto
    
 
 
