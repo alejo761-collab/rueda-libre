@@ -131,10 +131,37 @@ al momento de que el cliente quiera hacer la reservacion y asi es mas facil de u
 
    - Resultado obtenido: Bloqueado correctamente (min).
 
-   mirando el codigo puse en index unos div que ya con el conocimiento que tengo ahora pinso que es donde deben de estar, los puse despues
+ 
+  3. mirando el codigo puse en 
+   index.html: unos div que ya con el conocimiento que tengo ahora pinso que es donde deben de estar, los puse despues
    de varios section y los dividi entre div aparte de eso le meti otra imagen con una ruta mas especifica tipo mapa que el cliente puede ver.
-   en tarifas.html tambien hice lo mismo puse section y dentros de estos puse los div ya que tarifas la tenia casi sin nada de esto
-   
+
+   en tarifas.html: tambien hice lo mismo puse section y dentros de estos puse los div ya que tarifas la tenia casi sin nada de esto, tambien le puse la etiqueta del
+   <header> y le cambie unas cosas dentro de esta,tambien me fije que en el utimo <aside> dentro de un <p> habia puesto <em> sin cerrarlo, por lo que me puso todo el texto
+   de el <footer> en cursiva, pero ya lo cambie
+
+   reservas.html:hice practicamente lo mismo, organice mejor la sintaxys y me quedo mas organizado y entendible, tambien le cambie coloque el<header>
+   y le cambie algo dentro de este
+
+
+4. blanco sobre verde ruta: texto normal (botomes y enlaces)
+    blanco sobre naranja pedal: no aapta
+     Azul Noche sobre Naranja Pedal:texto normal
+     Azul Noche sobre Crema: texto normal (titulos y encabexados)
+     Gris Asfalto sobre Crema:texto normal(texto secundario)
+    Verde Ruta sobre Crema: texto normal
+     Naranja Pedal sobre Crema :no apto
+     blanco sobre Azul Noche: texto normal
+
+     como yo lo voy a hacer:
+     fondo de la pagina: Crema
+     Verde ruta sobre crema: botones y enlaces
+     azul noche sobre crema: titulos y encabezados
+      gris asfalto sobre crema: texto secundario
+      azul noche sobre naranja pedal: destacados y botones secundarios
+      
+
+
 
 
 
