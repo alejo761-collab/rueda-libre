@@ -1,0 +1,23 @@
+:root{
+    --color-primario: #1E7A4F;      /* Verde ruta */
+    --color-secundario: #F39A2B;     /* Naranja pedal */
+    --color-encabezados: #14213D;    /* Azul noche */
+    --fondo-general: #FAF6EF;           /* crema */
+    --color-texto-secundario: #5B6470; /* Gris asfalto */
+    
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-texto: 'Open Sans', sans-serif;
+
+    --espacio-pequeño: 0.5rem;
+    --espacio-mediano: 1rem;
+    --espacio-grande: 2rem;
+}
+body {
+    font-family: var(--fuente-texto);
+    background-color: var(--fondo-general);
+    color: var(--color-texto-secundario);
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-encabezados);
+}

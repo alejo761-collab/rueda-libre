@@ -144,16 +144,16 @@ al momento de que el cliente quiera hacer la reservacion y asi es mas facil de u
    y le cambie algo dentro de este
 
 
-4. blanco sobre verde ruta: texto normal (botomes y enlaces)
+4. blanco sobre verde ruta: texto normal 
     blanco sobre naranja pedal: no aapta
      Azul Noche sobre Naranja Pedal:texto normal
-     Azul Noche sobre Crema: texto normal (titulos y encabexados)
-     Gris Asfalto sobre Crema:texto normal(texto secundario)
+     Azul NocAhe sobre Crema: texto normal 
+     Gris Asfalto sobre Crema:texto normal
     Verde Ruta sobre Crema: texto normal
      Naranja Pedal sobre Crema :no apto
      blanco sobre Azul Noche: texto normal
 
-     como yo lo voy a hacer:
+   Mapaa de uso:
      fondo de la pagina: Crema
      Verde ruta sobre crema: botones y enlaces
      azul noche sobre crema: titulos y encabezados
@@ -161,6 +161,12 @@ al momento de que el cliente quiera hacer la reservacion y asi es mas facil de u
       azul noche sobre naranja pedal: destacados y botones secundarios
 
      https://alejo761-collab.github.io/rueda-libre/
+
+     COMPROVACION DE LOS QUE SE HEREDAN Y LOS QUE NO EN DevTools
+     Propiedad que SÍ se hereda: 
+     font-family. Comprobado en la pestaña Computed de las herramientas de desarrollo el párrafo hereda automáticamente la tipografía Open Sans definida previamente en la etiqueta body (styles.css:15). 
+       Propiedad que NO se hereda:
+        background-color. Comprobado en DevTools el párrafo no hereda el color de fondo del contenedor padre (body), manteniendo su transparencia por defecto.
 
 
 
