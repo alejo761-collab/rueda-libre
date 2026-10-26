@@ -12,6 +12,7 @@
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem;
 }
+
 body {
     font-family: var(--fuente-texto);
     background-color: var(--fondo-general);
@@ -20,4 +21,12 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--fuente-titulos);
     color: var(--color-encabezados);
+}
+
+#active a { 
+    color: var(--color-primario); 
+}
+.menu a { 
+    color: var(--color-texto-secundario) ;  
+    font-weight: 600 ;
 }

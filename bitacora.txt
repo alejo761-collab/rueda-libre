@@ -168,7 +168,16 @@ al momento de que el cliente quiera hacer la reservacion y asi es mas facil de u
        Propiedad que NO se hereda:
         background-color. Comprobado en DevTools el párrafo no hereda el color de fondo del contenedor padre (body), manteniendo su transparencia por defecto.
 
+   entregable dia 3
+   2.0
+   #menu a { color: var(--gris-asfalto); }
+.activo { color: var(--verde-ruta); font-weight: 600; }
 
+da error ya que el #menu es un id y esta arriba de la claqse entonces lo que hace CSS
+es que priorisa el id por encima de clase
+SOLUCION: la SOLUCION que yo haria es que cambiaria el #menu a tipo clase y el active a id 
+ya que asi al moemto de presionar se activaria el active sobre el menu
 
-
-
+.menu a { color: var(--gris-asfalto); }
+#
+activo { color: var(--verde-ruta); font-weight: 600; }
