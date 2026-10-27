@@ -1,13 +1,25 @@
-*{box-sizing: border-box;
-     width:auto}
-
-:root{
-    --color-primario: #1E7A4F;      /* Verde ruta */
-    --color-secundario: #F39A2B;     /* Naranja pedal */
-    --color-encabezados: #14213D;    /* Azul noche */
-    --fondo-general: #FAF6EF;           /* crema */
-    --color-texto-secundario: #5B6470; /* Gris asfalto */
+section, article {
+    dbox-sizing: border-box;
+    width: 300;
+    height: 40;
+    padding: auto;
+    margin: 15px;
+    border: 3px solid #14213D ;
     
+}
+
+:root {
+    --color-primario: #1E7A4F;
+    /* Verde ruta */
+    --color-secundario: #F39A2B;
+    /* Naranja pedal */
+    --color-encabezados: #14213D;
+    /* Azul noche */
+    --fondo-general: #FAF6EF;
+    /* crema */
+    --color-texto-secundario: #5B6470;
+    /* Gris asfalto */
+
     --fuente-titulos: 'Montserrat', sans-serif;
     --fuente-texto: 'Open Sans', sans-serif;
 
@@ -21,53 +33,78 @@ body {
     background-color: var(--fondo-general);
     color: var(--color-texto-secundario);
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--fuente-titulos);
     color: var(--color-encabezados);
 }
 
-#active a { 
-    color: var(--color-primario); 
+#active a {
+    color: var(--color-primario);
 }
-.menu a { 
-    color: var(--color-texto-secundario) ;  
-    font-weight: 600 ;
+
+.menu a {
+    color: var(--color-texto-secundario);
+    font-weight: 600;
 }
 
 ul.menu li a:hover {
     color: var(--color-secundario);
 }
+
 ul.menu li a:focus {
     color: var(--color-primario);
 }
+
 a.menu:hover {
     color: var(--color-secundario);
 }
+
 a.menu:focus {
     color: var(--color-primario);
 }
 
-.button{
+.button {
 
-background-color: var(--color-primario);
-color: white;
-border: none;
-padding: var(--espacio-pequeño) var(--espacio-mediano);
-text-align: center;
-font-family: var(--fuente-texto);  
-font-size: 1rem;
-text-decoration: none;
-cursor: pointer;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: var(--espacio-pequeño) var(--espacio-mediano);
+    text-align: center;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 .button:hover {
     background-color: var(--color-secundario);
 }
+
 .button:focus {
     background-color: var(--color-texto-secundario);
 }
-button:focus-visible{
+
+button:focus-visible {
     outline: 2px solid var(--color-secundario);
 }
-button:focus{
+
+button:focus {
     outline: 2px solid var(--color-secundario);
 }
+.portada{
+    width:100%;
+    min-height: 100vh;
+}
+#gif{
+    background-image: url(../asessd/gif/nuevaportadagif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
+
