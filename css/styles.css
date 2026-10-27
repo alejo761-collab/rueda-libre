@@ -1,3 +1,6 @@
+*{box-sizing: border-box;
+     width:auto}
+
 :root{
     --color-primario: #1E7A4F;      /* Verde ruta */
     --color-secundario: #F39A2B;     /* Naranja pedal */
@@ -35,6 +38,12 @@ ul.menu li a:hover {
     color: var(--color-secundario);
 }
 ul.menu li a:focus {
+    color: var(--color-primario);
+}
+a.menu:hover {
+    color: var(--color-secundario);
+}
+a.menu:focus {
     color: var(--color-primario);
 }
 
