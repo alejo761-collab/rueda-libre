@@ -1,5 +1,5 @@
 section, article {
-    dbox-sizing: border-box;
+    box-sizing: border-box;
     width: 300;
     height: 40;
     padding: auto;
@@ -34,7 +34,7 @@ body {
     color: var(--color-texto-secundario);
 }
 
-h1,
+
 h2,
 h3,
 h4,
@@ -42,6 +42,14 @@ h5,
 h6 {
     font-family: var(--fuente-titulos);
     color: var(--color-encabezados);
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.bienvenida{
+    text-align: center;;
+    color: white;
 }
 
 #active a {
@@ -51,6 +59,9 @@ h6 {
 .menu a {
     color: var(--color-texto-secundario);
     font-weight: 600;
+}
+ul.menu{
+    text-align: center;
 }
 
 ul.menu li a:hover {
@@ -97,14 +108,22 @@ button:focus-visible {
 button:focus {
     outline: 2px solid var(--color-secundario);
 }
-.portada{
+#gif {
     width:100%;
     min-height: 100vh;
-}
-#gif{
-    background-image: url(../asessd/gif/nuevaportadagif);
-    background-size: auto;
+    background: url(../asessed/giftmovimiento/portadanew.gif);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    padding: 200px;
+    
+}
+.portada {
+   width:100%;
+    min-height: 100vh;
+    background: url(../asessed/giftmovimiento/portadanew.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
