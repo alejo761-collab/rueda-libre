@@ -60,23 +60,23 @@
             <form action="procesar_reserva.php" method="post">
                 <fieldset>
                     <legend>Tus datos</legend>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="nombre">nombre completo</label><br>
                         <input type="text" id="nombre" name="nombre" minlength="3" required>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="documento">Numero de Documento</label><br>
                         <input type="text" id="documento" name="documento" pattern="[0-9]{6,10}"
                             title="solo números, entre 6 y 10 dígitos." required>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="email"> Correo Electronico</label><br>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="celular">Numero de celular</label><br>
                         <input type="tel" id="celular" name="celular" pattern="3[0-9]{9}"
                             title="10 dígitos y debe empezar por 3" required>
@@ -86,12 +86,12 @@
                 <br>
                 <fieldset>
                     <legend> Tu alquiler</legend>
-                    <div>
-                        <label for="Fecha de alquiler"> Fecha de alquiler</label><br>
-                        <input type="date" id="Fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
+                    <div class="grupo-formulario">
+                        <label for="fecha"> Fecha de alquiler</label><br>
+                        <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="tipo_bicileta">Tipo de bicicleta</label>
                         <select id="tipo_bicicleta" name="tipo_bicicleta" required>
                             <option value="">Seleccione una opción</option>
@@ -101,9 +101,9 @@
                         </select>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="plan">Plan de alquiler</label>
-                        <select id="plan" name="plan " required>
+                        <select id="plan" name="plan" required>
                             <option value=""> Seleccione una opción </option>
                             <option value="1_hora">1 Hora</option>
                             <option value="medio_dia">Medio Día</option>
@@ -111,13 +111,13 @@
                         </select>
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="cantidad">Cantidad de bicicletas</label>
                         <input type="number" id="cantidad" name="cantidad" min="1" max="6" required>
 
                     </div>
                     <br>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="recorridos">Recorridos</label>
                         <select id="recorridos" name="recorridos" required>
                             <option value="">Seleccione una opción</option>
@@ -131,7 +131,7 @@
                 <br>
                 <fieldset>
                     <legend>Confirmación</legend>
-                    <div>
+                    <div class="grupo-formulario">
                         <label for="comentarios">Comentarios adicionales</label><br>
                         <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="300"></textarea>
                     </div>
@@ -143,7 +143,7 @@
                     </div>
                 </fieldset>
                 <div>
-                    <button type="submit">Enviar reserva</button>
+                    <button  type="submit"  class="btn-enviar">Enviar reserva</button>
                 </div>
             </form>
         </section>
