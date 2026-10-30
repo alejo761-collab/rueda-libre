@@ -181,3 +181,22 @@ ya que asi al moemto de presionar se activaria el active sobre el menu
 .menu a { color: var(--gris-asfalto); }
 #
 activo { color: var(--verde-ruta); font-weight: 600; }
+
+Verificación de Box Model en Tarjetas
+- Ancho ANTES de box-sizing: La tarjeta se pasaba del tamaño por sumar el padding y los bordes.
+- Ancho DESPUÉS de box-sizing: border-box: El tamaño quedó exacto, metiendo el relleno y los bordes por dentro sin dañar el diseño.
+
+ultimo punto entrhable dia 3:
+
+- Empecé creando desde cero la estructura base en HTML para las tres páginas del sitio (Inicio, Reservas y tarifasÑ), usando etiquetas semánticas y asociando bien cada label con su input.
+- Definí mi sistema de diseño en el CSS usando variables (:root) para los colores corporativos y las tipografías.
+- Arreglé el menú de navegación para que se viera en fila con Flexbox y configuré los estados de foco (:focus) para que se pudiera navegar bien por todo el sitio usando la tecla Tab.
+- Controlé el modelo de caja aplicando box-sizing: border-box de forma global, limitando el ancho del contenido principal con rem y centrando todo para que no se estirara de más en pantallas grandes.
+- Maqueté las tarjetas de servicios, mejoré el diseño de las tablas con buen padding y organicé el formulario de reservas para que las etiquetas quedaran arriba y los campos a todo lo ancho.
+- Agregué la etiqueta flotante "Nuevo" en la tarjeta de la bici eléctrica sin romper el diseño, y coloqué el botón flotante de WhatsApp en la esquina inferior derecha con su respectivo espacio en el body para que no tapara el pie de página.
+- Hice mis pruebas en DevTools del ancho de las tarjetas antes y después de aplicar box-sizing.
+
+Lo que mejoraría en el futuro:
+- Añadir un menú hamburguesa para celulares.
+- Meterle validación con JavaScript al formulario.
+- Agregar animaciones suaves en las tarjetas.

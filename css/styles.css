@@ -7,7 +7,7 @@ section {
     border: 3px solid #14213D ;
     
 }
-
+/* Variables de color y tipografía */
 :root {
     --color-primario: #1E7A4F;
     /* Verde ruta */
@@ -27,7 +27,7 @@ section {
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem;
 }
-
+/* Estilos generales */
 body {
     font-family: var(--fuente-texto);
     background-color: var(--fondo-general);
@@ -55,10 +55,18 @@ h1{
 #active a {
     color: var(--color-primario);
 }
-
+/* Estilos para el menú de navegación */
 .menu a {
     color: var(--color-texto-secundario);
     font-weight: 600;
+}
+.menu {
+    list-style: none;
+    display: flex;           
+    gap: var(--espacio-grande);
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 ul.menu{
     text-align: center;
@@ -79,7 +87,7 @@ a.menu:hover {
 a.menu:focus {
     color: var(--color-primario);
 }
-
+/* Estilos para los botones */
 .button {
 
     background-color: var(--color-primario);
@@ -108,6 +116,7 @@ button:focus-visible {
 button:focus {
     outline: 2px solid var(--color-secundario);
 }
+/* Estilos para la sección de bienvenida */
 #gif {
     width:100%;
     min-height: 100vh;
@@ -126,7 +135,7 @@ button:focus {
     background-repeat: no-repeat;
 
 }
-
+/* Estilos para las tarjetas de información */
 .card{
     position: relative;
     background-color: var(--fondo-general);
@@ -146,6 +155,7 @@ button:focus {
     border-radius: 12px;
     margin-bottom: var(--espacio-mediano);
 }
+/* Estilos para las tablas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -164,14 +174,7 @@ td {
     border-bottom: 2px solid var(--color-texto-secundario);
     font-family: var(--fuente-texto);
 }
-.menu {
-    list-style: none;
-    display: flex;           
-    gap: var(--espacio-grande);
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
+
 /* Grupo de cada campo del formulario */
 .grupo-formulario {
     margin-bottom: var(--espacio-mediano); 
@@ -205,6 +208,7 @@ form button, .btn-enviar {
     cursor: pointer;
     font-weight: 600;
 }
+/*boton flotante de whatsapp*/
 .whatsapp-flotante {
     position: fixed;
     bottom: 20px;
