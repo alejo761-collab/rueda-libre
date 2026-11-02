@@ -200,3 +200,15 @@ Lo que mejoraría en el futuro:
 - Añadir un menú hamburguesa para celulares.
 - Meterle validación con JavaScript al formulario.
 - Agregar animaciones suaves en las tarjetas.
+
+
+
+
+
+                                                SEMANA 2
+ Dia 1
+ reto 1
+
+Prueba de adaptabilidad con Flexbox (Header y Footer)
+ Pantallas anchas: El nombre del negocio y el menú se ubican en extremos opuestos con alineación vertical perfecta. El pie muestra sus tres bloques en fila distribuidos de forma uniforme.
+ Pantallas estrechas (Celulares): Gracias a flex-wrap, los enlaces del menú y las columnas del pie de página descienden ordenadamente sin desbordar ni amontonarse en la interfaz.

@@ -3,7 +3,7 @@ section {
     width: 300;
     height: 40;
     padding: auto;
-    margin: 15px;
+    margin: 30px;
     border: 3px solid #14213D ;
     
 }
@@ -34,7 +34,7 @@ body {
     color: var(--color-texto-secundario);
 }
 
-
+h1,
 h2,
 h3,
 h4,
@@ -43,40 +43,31 @@ h6 {
     font-family: var(--fuente-titulos);
     color: var(--color-encabezados);
 }
-h1{
+
+h2{
     text-align: center;
-    color: white;
+    font-family: var(--fuente-titulos);
+    color: var(--color-encabezados);
 }
-.bienvenida{
-    text-align: center;;
-    color: white;
-}
+
 
 #active a {
     color: var(--color-primario);
 }
+
 /* Estilos para el menú de navegación */
 .menu a {
     color: var(--color-texto-secundario);
     font-weight: 600;
 }
-.menu {
-    list-style: none;
-    display: flex;           
-    gap: var(--espacio-grande);
-    padding: 0;
-    margin: 0;
-    align-items: center;
-}
-ul.menu{
-    text-align: center;
-}
 
-ul.menu li a:hover {
+
+
+.menu a:hover {
     color: var(--color-secundario);
 }
 
-ul.menu li a:focus {
+.menu a:focus {
     color: var(--color-primario);
 }
 
@@ -116,16 +107,7 @@ button:focus-visible {
 button:focus {
     outline: 2px solid var(--color-secundario);
 }
-/* Estilos para la sección de bienvenida */
-#gif {
-    width:100%;
-    min-height: 100vh;
-    background: url(../asessed/giftmovimiento/portadanew.gif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
+
 .portada {
    width:100%;
     min-height: 100vh;
@@ -229,5 +211,20 @@ form button, .btn-enviar {
 .whatsapp-flotante:focus {
     background-color: var(--color-texto-secundario);
 }
-
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    gap: var(--espacio-grande);
+    flex-wrap: wrap;
+}
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;        
+    flex-wrap: wrap;
+}
