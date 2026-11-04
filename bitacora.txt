@@ -212,3 +212,12 @@ Lo que mejoraría en el futuro:
 Prueba de adaptabilidad con Flexbox (Header y Footer)
  Pantallas anchas: El nombre del negocio y el menú se ubican en extremos opuestos con alineación vertical perfecta. El pie muestra sus tres bloques en fila distribuidos de forma uniforme.
  Pantallas estrechas (Celulares): Gracias a flex-wrap, los enlaces del menú y las columnas del pie de página descienden ordenadamente sin desbordar ni amontonarse en la interfaz.
+
+ reto 2:
+ 1280 px: Se ven 4 columnas. La cuadrícula aprovecha bien el espacio horizontal y las tarjetas se distribuyen de forma cómoda sin estirarse de más.
+
+900 px: Baja a 2 columnas. Las tarjetas se ajustan perfecto al ancho disponible y mantienen la misma altura por fila.
+
+500 px: Queda en 1 sola columna. Las tarjetas ocupan todo el ancho de la pantalla y el diseño no se rompe en ningún momento.
+
+Agregué el séptimo modelo (Tándem) y se acomodó solo en la cuadrícula sin tocar nada del CSS, y gracias a Flexbox el botón "Reservar" quedó perfectamente alineado abajo en todas las tarjetas aunque las descripciones tengan tamaños distintos. Commit y push listos.
