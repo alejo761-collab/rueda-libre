@@ -42,6 +42,9 @@ h2 {
     font-family: var(--fuente-titulos);
     color: var(--color-encabezados);
 }
+h1{
+    color: white;
+}
 
 
 #active a {
@@ -113,6 +116,12 @@ button:focus {
 }
 
 /* Estilos para las tarjetas de información */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--espacio-mediano);
+    margin-top: 40px;
+}
 .card {
     position: relative;
     background-color: var(--fondo-general);
@@ -120,6 +129,9 @@ button:focus {
     border: 1px solid var(--color-texto-secundario);
     border-radius: 12px;
     margin-bottom: var(--espacio-mediano);
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .nuevo {
@@ -133,7 +145,45 @@ button:focus {
     border-radius: 12px;
     margin-bottom: var(--espacio-mediano);
 }
+.alquileres {
+width: 50%;
+}
+.box-alquileres {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+.box-alquileres article {
+    background-color: var(--fondo-general);
+    padding: var(--espacio-mediano);
+    border: 3px solid var(--color-texto-secundario);
+    border-radius: 12px;
+    margin-bottom: var(--espacio-mediano);
+}
+.box-imagenes {
+    display: flex;
+    gap: var(--espacio-mediano);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-imagenes figure {
+    border-style: outset;
+    border-color: var(--color-texto-secundario);
+    border-width: 10px;
+}
+.ubication {
+    display: flex;
+    flex-direction: column;
+    
+}
 
+ 
+
+
+  
+  
 /* Estilos para las tablas */
 table {
     width: 100%;
@@ -166,12 +216,24 @@ td {
 
     color: var(--color-encabezados);
 }
+.box-formulario-grd {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+.box-celnumber {
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+gap: var(--espacio-grande);
+}
 
 /* Campos de texto a lo ancho disponible */
 .grupo-formulario input,
 .grupo-formulario select,
 .grupo-formulario textarea {
-    width: 50%;
+    width: 80%;
     padding: var(--espacio-mediano);
     /* Relleno generoso para escribir cómodamente */
 }
@@ -247,7 +309,7 @@ footer {
     gap: var(--espacio-mediano);
     margin: var(--espacio-mediano) 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 }
 
 .box-flota article {
