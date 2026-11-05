@@ -110,7 +110,6 @@ button:focus {
     min-height: 100vh;
     background: url(../asessed/giftmovimiento/portadanew.gif);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
 
 }
@@ -216,18 +215,18 @@ td {
 
     color: var(--color-encabezados);
 }
-.box-formulario-grd {
+.formulario-grd {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
 }
+
 .box-celnumber {
 display:flex;
-flex-direction: row;
-align-items: center;
 justify-content: space-around;
 gap: var(--espacio-grande);
 }
+
 
 /* Campos de texto a lo ancho disponible */
 .grupo-formulario input,

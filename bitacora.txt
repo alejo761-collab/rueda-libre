@@ -221,3 +221,16 @@ Prueba de adaptabilidad con Flexbox (Header y Footer)
 500 px: Queda en 1 sola columna. Las tarjetas ocupan todo el ancho de la pantalla y el diseño no se rompe en ningún momento.
 
 Agregué el séptimo modelo (Tándem) y se acomodó solo en la cuadrícula sin tocar nada del CSS, y gracias a Flexbox el botón "Reservar" quedó perfectamente alineado abajo en todas las tarjetas aunque las descripciones tengan tamaños distintos. Commit y push listos.
+
+reto 3:
+Encabezado: Usé Flexbox porque los elementos del menú van organizados en una sola dirección (horizontalmente) y con espacio entre ellos para que se vean ordenados.
+
+Portada: Usé Flexbox para colocar el texto a la izquierda y la foto a la derecha, facilitando además que el bloque de texto quedara centrado verticalmente sin complicaciones.
+
+Galería ("Nuestras rutas"): Usé Grid porque necesitaba organizar las tres tarjetas en una estructura de filas y columnas al mismo tiempo (en dos dimensiones), asegurando que se repartieran perfecto en la pantalla.
+
+Sección de Reservas: Usé Grid porque el diseño me pedía dividir la pantalla en dos columnas con proporciones muy claras: dos tercios para el formulario y un tercio para el contacto.
+
+Fila del formulario (documento y celular): Usé Flexbox porque solo necesitaba poner esos dos campos cortitos uno al lado del otro en una sola línea (una sola dimensión).
+
+Pie de página (Footer): Usé Flexbox porque los textos y enlaces de abajo van alineados en una sola línea horizontal de forma limpia.
