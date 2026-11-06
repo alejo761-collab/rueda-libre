@@ -250,6 +250,7 @@ Paleta cromática: Base unificada con escala de grises oscuros (slate-800, slate
 
 DIA 2
 
+punto 5
 
 Justificación de Layout (Grid vs Flexbox):
 
@@ -258,3 +259,12 @@ Sección Rutas (3 Cards): Se seleccionó grid (grid-cols-1 lg:grid-cols-3 gap-8)
 Sección ¿Cómo funciona? (4 Pasos): Se utilizó grid (grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6) debido a que son 4 bloques simétricos y ordenados secuencialmente que deben distribuirse de manera homogénea a lo largo de todo el ancho del contenedor.
 
 Encabezado y Pie de Página: Se seleccionó flex (flex justify-between items-center) porque son distribuciones unidireccionales ideales para alinear elementos a los extremos en una sola fila.
+
+punto 6
+
+| Ancho de Pantalla | Dispositivo simulado | Comportamiento del Encabezado | Comportamiento de Rutas | Comportamiento de Pasos | ¿Hay scroll horizontal? |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 360 px | Móvil pequeño / Estándar | Apilado en vertical (Logo arriba, botón abajo); enlaces de navegación ocultos (hidden). | 1 columna (apiladas verticalmente una debajo de otra). | 1 columna (apiladas en secuencia vertical del 1 al 4). | No (cero desbordamiento). |
+| 768 px | Tablet (Modo portrait) | Se despliega en fila (md:flex-row) manteniendo logo a un lado y navegación/botón alineados. | 2 columnas (sm:grid-cols-2), ajustando el espacio de forma fluida. | 2 columnas (sm:grid-cols-2), formando una cuadrícula equilibrada. | No. |
+| 1024 px | Escritorio compacto (Laptop) | Fila completa con menú visible (md:flex) y botón de inscripción a la derecha. | 3 columnas completas (lg:grid-cols-3), mostrando las tres cards en paralelo. | 4 columnas en línea (lg:grid-cols-4). | No. |
+| 1280 px | Escritorio amplio (Desktop) | Estructura centrada con max-w-6xl, espaciado amplio y totalmente fluido. | 3 columnas perfectamente proporcionales con efectos hover estables. | 4 columnas con distribución homogénea en toda la pantalla. | No. |
