@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre - Campaña Nocturna</title>
-    <!-- CSS compilado y minificado -->
+    <!-- CSS compilado por Tailwind CLI -->
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-fondo-crema text-encabezados dark:bg-encabezados dark:text-fondo-crema font-texto min-h-screen flex flex-col transition-colors duration-300">
@@ -12,7 +12,8 @@
     <!-- ================= ENCABEZADO (HEADER) ================= -->
     <header class="sticky top-0 z-50 bg-fondo-crema/90 dark:bg-encabezados/90 backdrop-blur border-b border-gris-asfalto/20 dark:border-slate-800">
         <div class="max-w-6xl mx-auto px-4 py-3 md:py-4 flex flex-col md:flex-row items-center justify-between gap-3 md:gap-0">
-            <a href="#" class="text-xl md:text-2xl font-bold font-titulos tracking-tight text-encabezados dark:text-fondo-crema flex items-center gap-2">
+            <!-- Logo que regresa al sitio principal HTML -->
+            <a href="../index.html" class="text-xl md:text-2xl font-bold font-titulos tracking-tight text-encabezados dark:text-fondo-crema flex items-center gap-2">
                 <span class="text-amarillo-farol">🚲</span> Rueda Libre
             </a>
 
@@ -20,6 +21,8 @@
                 <a href="#inicio" class="hover:text-primario dark:hover:text-amarillo-farol transition">Inicio</a>
                 <a href="#rutas" class="hover:text-primario dark:hover:text-amarillo-farol transition">Rutas</a>
                 <a href="#como-funciona" class="hover:text-primario dark:hover:text-amarillo-farol transition">¿Cómo funciona?</a>
+                <!-- Enlace hacia la página principal de reservas -->
+                <a href="../reservas.html" class="text-secundario font-semibold hover:underline">Reserva tu bici</a>
             </nav>
 
             <a href="#inscripcion" class="btn-amarillo">
@@ -47,8 +50,8 @@
                     <a href="#rutas" class="btn-primario">
                         Ver Rutas
                     </a>
-                    <a href="#como-funciona" class="btn-secundario">
-                        Conoce más
+                    <a href="../reservas.html" class="btn-secundario">
+                        Reserva tu bici
                     </a>
                 </div>
             </div>
@@ -90,9 +93,9 @@
                                     <span class="block text-[10px] md:text-xs text-gris-asfalto dark:text-fondo-crema/60">Precio</span>
                                     <span class="text-xl md:text-2xl font-bold font-titulos text-primario dark:text-amarillo-farol">$55.000</span>
                                 </div>
-                                <button class="btn-primario !py-2 !px-4 !text-xs md:!text-sm">
+                                <a href="#inscripcion" class="btn-primario !py-2 !px-4 !text-xs md:!text-sm">
                                     Reservar
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -124,9 +127,9 @@
                                     <span class="block text-[10px] md:text-xs text-gris-asfalto dark:text-fondo-crema/60">Precio</span>
                                     <span class="text-xl md:text-2xl font-bold font-titulos text-secundario dark:text-amarillo-farol">$75.000</span>
                                 </div>
-                                <button class="btn-secundario !py-2 !px-4 !text-xs md:!text-sm">
+                                <a href="#inscripcion" class="btn-secundario !py-2 !px-4 !text-xs md:!text-sm">
                                     Reservar
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -158,9 +161,9 @@
                                     <span class="block text-[10px] md:text-xs text-gris-asfalto dark:text-fondo-crema/60">Precio</span>
                                     <span class="text-xl md:text-2xl font-bold font-titulos text-secundario dark:text-amarillo-farol">$95.000</span>
                                 </div>
-                                <button class="btn-amarillo !py-2 !px-4 !text-xs md:!text-sm">
+                                <a href="#inscripcion" class="btn-amarillo !py-2 !px-4 !text-xs md:!text-sm">
                                     Reservar
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +207,7 @@
             </div>
         </section>
 
-        <!-- 4. INSCRIPCIÓN (FORMULARIO COMPLETO Y VALIDADO) -->
+        <!-- 4. INSCRIPCIÓN (FORMULARIO VALIDADO) -->
         <section id="inscripcion" class="py-12 md:py-16 lg:py-24 bg-gris-asfalto/5 dark:bg-slate-900/50">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white dark:bg-slate-900 border-2 border-amarillo-farol/60 dark:border-slate-700 p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
@@ -214,28 +217,23 @@
                         <p class="text-gris-asfalto dark:text-fondo-crema/80 text-xs md:text-sm">Completa todos los campos obligatorios para asegurar tu cupo hoy.</p>
                     </div>
 
-                    <!-- Formulario con validación nativa -->
                     <form class="space-y-6" novalidate>
-
                         <!-- Fieldset 1: Datos Personales -->
                         <fieldset class="space-y-4 border border-gris-asfalto/20 dark:border-slate-800 p-4 md:p-6 rounded-xl">
                             <legend class="px-2 font-titulos font-bold text-sm text-primario dark:text-amarillo-farol uppercase tracking-wider">1. Datos Personales</legend>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <!-- Nombre Completo -->
                                 <div class="space-y-1.5 md:col-span-2">
                                     <label for="nombre" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Nombre completo *</label>
                                     <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Ej. Carlos Andrés Pérez" class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema placeholder-gris-asfalto/60 focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
                                     <span class="text-[11px] text-gris-asfalto dark:text-fondo-crema/60 block">Mínimo 3 caracteres.</span>
                                 </div>
 
-                                <!-- Correo Electrónico -->
                                 <div class="space-y-1.5">
                                     <label for="correo" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Correo electrónico *</label>
                                     <input type="email" id="correo" name="correo" required placeholder="tu.correo@ejemplo.com" class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema placeholder-gris-asfalto/60 focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
                                 </div>
 
-                                <!-- Celular -->
                                 <div class="space-y-1.5">
                                     <label for="celular" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Número de celular *</label>
                                     <input type="tel" id="celular" name="celular" required pattern="^3[0-9]{9}$" title="Debe tener 10 dígitos y empezar por 3 (ej. 3001234567)" placeholder="3001234567" class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema placeholder-gris-asfalto/60 focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
@@ -249,7 +247,6 @@
                             <legend class="px-2 font-titulos font-bold text-sm text-primario dark:text-amarillo-farol uppercase tracking-wider">2. Selección de Experiencia</legend>
                             
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <!-- Ruta -->
                                 <div class="space-y-1.5">
                                     <label for="ruta" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Elige tu ruta *</label>
                                     <select id="ruta" name="ruta" required class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
@@ -260,7 +257,6 @@
                                     </select>
                                 </div>
 
-                                <!-- Día de salida -->
                                 <div class="space-y-1.5">
                                     <label for="dia" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Día de salida *</label>
                                     <select id="dia" name="dia" required class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
@@ -271,14 +267,12 @@
                                     </select>
                                 </div>
 
-                                <!-- Número de acompañantes -->
                                 <div class="space-y-1.5">
                                     <label for="acompanantes" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Número de acompañantes *</label>
                                     <input type="number" id="acompanantes" name="acompanantes" required min="0" max="3" value="0" class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
                                     <span class="text-[11px] text-gris-asfalto dark:text-fondo-crema/60 block">Entre 0 y 3 personas.</span>
                                 </div>
 
-                                <!-- Nivel de experiencia -->
                                 <div class="space-y-1.5">
                                     <label for="experiencia" class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">Nivel de experiencia *</label>
                                     <select id="experiencia" name="experiencia" required class="w-full bg-fondo-crema dark:bg-encabezados border border-gris-asfalto/30 dark:border-slate-700 rounded-lg px-4 py-2.5 text-encabezados dark:text-fondo-crema focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 focus:border-amarillo-farol transition text-sm">
@@ -290,7 +284,6 @@
                                 </div>
                             </div>
 
-                            <!-- Bicicleta propia (Radio buttons) -->
                             <div class="space-y-2 pt-2">
                                 <span class="block text-xs md:text-sm font-medium text-encabezados dark:text-fondo-crema">¿Tienes bicicleta propia? *</span>
                                 <div class="flex items-center gap-6">
@@ -303,3 +296,51 @@
                                 </div>
                             </div>
                         </fieldset>
+
+                        <div class="flex items-start gap-3 pt-2">
+                            <input type="checkbox" id="condiciones" name="condiciones" required class="mt-1 h-4 w-4 rounded border-gris-asfalto/30 text-primario focus:ring-primario accent-primario">
+                            <label for="condiciones" class="text-xs md:text-sm text-gris-asfalto dark:text-fondo-crema/80 leading-relaxed cursor-pointer">
+                                Acepto los términos, condiciones de seguridad vial, uso obligatorio de casco y la política de tratamiento de datos personales de Rueda Libre. *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn-primario w-full !py-3.5">
+                            Confirmar e Inscribirme Ahora
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-white dark:bg-encabezados border-t border-gris-asfalto/20 dark:border-slate-800 py-8 md:py-12">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between gap-6 md:gap-8 text-xs md:text-sm text-gris-asfalto dark:text-fondo-crema/60">
+            <div class="space-y-2 md:w-1/3">
+                <span class="text-base md:text-lg font-bold font-titulos text-encabezados dark:text-fondo-crema flex items-center gap-2">
+                    <span class="text-amarillo-farol">🚲</span> Rueda Libre
+                </span>
+                <p class="text-[11px] md:text-xs">Promoviendo el transporte sostenible y las rodadas nocturnas comunitarias.</p>
+            </div>
+
+            <div class="space-y-2 md:w-1/3">
+                <h4 class="font-semibold font-titulos text-encabezados dark:text-fondo-crema text-sm">Navegación</h4>
+                <ul class="space-y-1 text-xs">
+                    <li><a href="#inicio" class="hover:text-primario dark:hover:text-amarillo-farol transition">Inicio</a></li>
+                    <li><a href="#rutas" class="hover:text-primario dark:hover:text-amarillo-farol transition">Rutas disponibles</a></li>
+                    <li><a href="#como-funciona" class="hover:text-primario dark:hover:text-amarillo-farol transition">Proceso de inscripción</a></li>
+                    <li><a href="../reservas.html" class="hover:text-secundario transition">Reservar bicicleta</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-2 md:w-1/3">
+                <h4 class="font-semibold font-titulos text-encabezados dark:text-fondo-crema text-sm">Sede Principal</h4>
+                <p class="text-xs">Salida y llegada en la Sede Rueda Libre.</p>
+                <p class="text-xs opacity-60">© 2026 Rueda Libre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
