@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /* Botón Principal (Verde Ruta / Fondo oscuro) */
+  .btn-primario {
+    @apply bg-primario hover:bg-emerald-800 text-white font-bold font-titulos px-6 py-3 rounded-lg shadow-md transition focus:outline-none focus:ring-4 focus:ring-primario/50 text-sm md:text-base inline-block text-center;
+  }
+
+  /* Botón Secundario / Destacado (Naranja Pedal) */
+  .btn-secundario {
+    @apply bg-secundario hover:bg-amber-600 text-white font-bold font-titulos px-6 py-3 rounded-lg shadow-md transition focus:outline-none focus:ring-4 focus:ring-secundario/50 text-sm md:text-base inline-block text-center;
+  }
+
+  /* Botón de Campaña (Amarillo Farol) */
+  .btn-amarillo {
+    @apply bg-amarillo-farol hover:bg-yellow-400 text-encabezados font-bold font-titulos px-4 py-2 rounded-lg shadow transition focus:outline-none focus:ring-4 focus:ring-amarillo-farol/50 text-xs md:text-sm inline-block text-center;
+  }
+}

@@ -268,3 +268,65 @@ punto 6
 | 768 px | Tablet (Modo portrait) | Se despliega en fila (md:flex-row) manteniendo logo a un lado y navegación/botón alineados. | 2 columnas (sm:grid-cols-2), ajustando el espacio de forma fluida. | 2 columnas (sm:grid-cols-2), formando una cuadrícula equilibrada. | No. |
 | 1024 px | Escritorio compacto (Laptop) | Fila completa con menú visible (md:flex) y botón de inscripción a la derecha. | 3 columnas completas (lg:grid-cols-3), mostrando las tres cards en paralelo. | 4 columnas en línea (lg:grid-cols-4). | No. |
 | 1280 px | Escritorio amplio (Desktop) | Estructura centrada con max-w-6xl, espaciado amplio y totalmente fluido. | 3 columnas perfectamente proporcionales con efectos hover estables. | 4 columnas con distribución homogénea en toda la pantalla. | No. |
+
+DIA 2
+
+punto 8
+
+====================================================================
+ANÁLISIS DE RENDIMIENTO Y COMPARATIVA: BOOTSTRAP vs TAILWIND CSS
+====================================================================
+
+1. MEDICIÓNDE RECURSOS EN DEVTOLS (NETWORK)
+--------------------------------------------------------------------
+* Bootstrap v5.3 (Carga en Sitio v2.0):
+  - CSS (`bootstrap.min.css` CDN): ~165 KB
+  - JS (`bootstrap.bundle.min.js` CDN): ~80 KB
+  - Peso total transferido: ~245 KB
+
+* Tailwind CSS v3.4 (Campaña Nocturna minificada):
+  - CSS (`output.css` compilado y minificado): ~14.8 KB
+  - JS: 0 KB (No requiere JavaScript para layout ni utilidades responsive)
+  - Reducción del peso total: ~94% de ahorro en transferencia de red.
+
+--------------------------------------------------------------------
+2. COMPARATIVA DE FRAMEWORKS SEGÚN 4 CRITERIOS
+--------------------------------------------------------------------
+| Criterio | Bootstrap v5 | Tailwind CSS v3 |
+| :--- | :--- | :--- |
+| Curva de aprendizaje | Rápida e intuitiva. Ideal para prototipos usando componentes ya listos (`.navbar`, `.card`, `.btn`). | Moderada al inicio por la cantidad de utilidades de atómicos, pero sumamente ágil al dominar la sintaxis. |
+| Personalización | Compleja. Requiere sobrescribir variables Sass/CSS o usar `!important` para adaptar colores corporativos específicos. | Total y nativa. La paleta de marca y tipografías se definen directamente en la configuración sin generar código redundante. |
+| Tamaño final del CSS | Fijo y pesado. Carga cientos de componentes no utilizados por defecto (~245 KB en total). | Ultraligero. Purga automáticamente cualquier selector no usado en el HTML, reduciendo el compilado a ~14.8 KB. |
+| Casos de uso ideales | Paneles administrativos internos (Dashboards), herramientas de prototipado rápido o sitios web convencionales. | Landing pages de alto tráfico, interfaces de usuario personalizadas, sitios enfocados en rendimiento y mobile-first. |
+
+--------------------------------------------------------------------
+3. RECOMENDACIÓN TÉCNICA JUSTIFICADA PARA RUEDA LIBRE
+--------------------------------------------------------------------
+Recomendamos adoptar Tailwind CSS como el framework estándar para las futuras versiones del sitio completo de Rueda Libre por las siguientes razones clave:
+
+1. Optimización para tráfico móvil (Redes Sociales): 
+   Con una reducción del 94% en el peso del recurso y 0 KB de JavaScript bloqueante, la landing carga instantáneamente incluso en redes móviles 3G/4G con cobertura limitada.
+2. Identidad Visual 100% fiel: 
+   Permite integrar con precisión milimétrica la paleta corporativa (Verde Ruta, Naranja Pedal, Azul Noche, Crema y el nuevo Amarillo Farol) y el modo oscuro sin sobrecargar el código.
+3. Mantenibilidad y Limpieza: 
+   Mediante la estrategia de componentes del kit y el uso controlado de `@apply` en `src/input.css` para elementos altamente repetitivos (como botones), logramos un HTML limpio y fácil de mantener por el equipo de desarrollo.
+
+   DIA 3
+
+    punto 9
+
+    ====================================================================
+BITÁCORA: CONSTRUCCIÓN Y VALIDACIÓN DEL FORMULARIO DE INSCRIPCIÓN
+====================================================================
+- Cronómetro de desarrollo: 32 minutos (Cumplido dentro del límite de 40 min).
+
+1. PRUEBAS DE VALIDACIÓN Y ACCESIBILIDAD (TECLADO / NATIVAS)
+--------------------------------------------------------------------
+* Formulario vacío: 
+  - Comportamiento: Al intentar hacer clic en el botón de envío sin llenar campos, el navegador bloquea la acción y enfoca automáticamente el primer campo obligatorio faltante ("Nombre completo"), mostrando la alerta nativa "Rellena este campo".
+* Datos inválidos: 
+  - Celular con menos de 10 dígitos o letras (ej. "300abc"): La validación con `pattern="^3[0-9]{9}$"` detecta la discordancia e impide el envío mostrando el texto de ayuda correspondiente.
+  - Acompañantes fuera de rango (-1 o 4): Las restricciones `min="0"` y `max="3"` bloquean la subida de datos erróneos.
+* Formulario completo y navegación por teclado: 
+  - Se recorrió la totalidad de los inputs, selects, radios y checkbox utilizando exclusivamente la tecla `Tab` (para avanzar) y `Shift + Tab` (para retroceder), con indicadores de foco claros en color amarillo farol (`ring-amarillo-farol`).
+  
