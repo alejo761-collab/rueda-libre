@@ -235,7 +235,9 @@ Fila del formulario (documento y celular): Usé Flexbox porque solo necesitaba p
 
 Pie de página (Footer): Usé Flexbox porque los textos y enlaces de abajo van alineados en una sola línea horizontal de forma limpia.
 
-SEMANA 3
+
+                                                   SEMANA 3
+
 DIA 1
 punto 4
 
@@ -348,3 +350,9 @@ BITÁCORA: IMPLEMENTACIÓN DE SECCIÓN "PLANES RUEDA NOCTURNA"
   - Se aplicó un borde más grueso (`border-4 border-secundario dark:border-amarillo-farol`), una ligera elevación visual (`transform lg:-translate-y-2`) y una insignia flotante absoluta ("Más elegido") sin alterar el flujo estructural de las otras dos cards.
 * Modo Oscuro y Accesibilidad: 
   - Todos los textos secundarios y beneficios mantienen un contraste superior a 4.5:1 sobre los fondos oscuros (`dark:bg-slate-900` y `dark:text-fondo-crema/80`).
+
+
+                                             SEMANA 3 VERDADERA
+
+
+                                             

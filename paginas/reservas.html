@@ -18,11 +18,11 @@
 <body>
     <main>
 
-        <header class="portada">
+        <header class="portada-mobile" >
             <h1>Rueda Libre</h1>
 
             <nav>
-                <ul class="menu">
+                <ul class="menu-mobile" >
                     <li id="active"><a href="/paginas/reservas.html">Reservas</a></li>
                     <li><a href="../index.html">Volver a la página principal</a></li>
                     <li><a href="tarifas.html">Ver tarifas y rutas</a></li>
@@ -56,21 +56,21 @@
 
                 </di>
             </aside>
-            <p>Escribenos a nuestro correo electronico:<a class="menu"
+            <p>Escribenos a nuestro correo electronico:<a class="menu-mobile" 
                     href="mailto:ruedalibre123@gmail.com">ruedalibre123@gmail.com</a></p>
         </section>
         <section>
             <h3>Formulario de reserva</h3>
             <form action="procesar_reserva.php" method="post">
-                <div class="formulario-grd">
+                <div class="formulario-grd-mobile" >
                     <fieldset>
                         <legend>Tus datos</legend>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="nombre">nombre completo</label><br>
                             <input type="text" id="nombre" name="nombre" minlength="3" required>
                         </div>
 
-                        <div class="grupo-formulario box-celnumber">
+                        <div class="grupo-formulario-mobile class="box-celnumber-mobile" ">
                             <div>
                                 <label for="documento">Numero de Documento</label><br>
                                 <input type="number" id="documento" name="documento" pattern="[0-9]{6,10}"
@@ -82,7 +82,7 @@
                                     title="10 dígitos y debe empezar por 3" required>
                             </div>
                         </div>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="email"> Correo Electronico</label><br>
                             <input type="email" id="email" name="email" required>
                         </div>
@@ -92,12 +92,12 @@
 
                     <fieldset>
                         <legend> Tu alquiler</legend>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="fecha"> Fecha de alquiler</label><br>
                             <input type="date" id="fecha" name="fecha" min="2026-11-01" max="2026-12-31" required>
                         </div>
                         <br>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="tipo_bicileta">Tipo de bicicleta</label>
                             <select id="tipo_bicicleta" name="tipo_bicicleta" required>
                                 <option value="">Seleccione una opción</option>
@@ -107,7 +107,7 @@
                             </select>
                         </div>
                         <br>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="plan">Plan de alquiler</label>
                             <select id="plan" name="plan" required>
                                 <option value=""> Seleccione una opción </option>
@@ -117,13 +117,13 @@
                             </select>
                         </div>
                         <br>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="cantidad">Cantidad de bicicletas</label>
                             <input type="number" id="cantidad" name="cantidad" min="1" max="6" required>
 
                         </div>
                         <br>
-                        <div class="grupo-formulario">
+                        <div class="grupo-formulario-mobile" >
                             <label for="recorridos">Recorridos</label>
                             <select id="recorridos" name="recorridos" required>
                                 <option value="">Seleccione una opción</option>
@@ -138,7 +138,7 @@
 
                 <fieldset>
                     <legend>Confirmación</legend>
-                    <div class="grupo-formulario">
+                    <div class="grupo-formulario-mobile" >
                         <label for="comentarios">Comentarios adicionales</label><br>
                         <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="300"></textarea>
                     </div>
@@ -150,11 +150,11 @@
                     </div>
                 </fieldset>
                 <div>
-                    <button type="submit" class="button">Enviar reserva</button>
+                    <button type="submit" class="button-mobile" >Enviar reserva</button>
                 </div>
             </form>
         </section>
-        <a href="https://wa.me/573000000000" class="whatsapp-flotante" etiqueta="icono" target="_blank"
+        <a href="https://wa.me/573000000000" class="whatsapp-flotante-mobile"  etiqueta="icono" target="_blank"
             rel="noopener noreferrer">
             📱 whatsapp
         </a>

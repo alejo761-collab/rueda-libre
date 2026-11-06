@@ -18,6 +18,340 @@
     --espacio-mediano: 1rem;
     --espacio-grande: 2rem;
 }
+/* Estilos generales */
+body {
+    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-texto);
+    background-color: var(--fondo-general);
+    color: var(--color-texto-secundario);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-encabezados);
+}
+
+h2 {
+    text-align: center;
+    font-family: var(--fuente-titulos);
+    color: var(--color-encabezados);
+}
+h1{
+    color: white;
+}
+
+
+#active a {
+    color: var(--color-primario);
+}
+
+/* Estilos para el menú de navegación */
+.menu-mobile a {
+    color:white;
+    font-weight: 600;
+}
+
+
+
+.menu a:hover {
+    color: var(--color-secundario);
+}
+
+.menu a:focus {
+    color: var(--color-primario);
+}
+
+a.menu:hover {
+    color: var(--color-secundario);
+}
+
+a.menu:focus {
+    color: var(--color-primario);
+}
+
+/* Estilos para los botones */
+.button-mobile {
+    border-radius: 20px;
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: var(--espacio-pequeño) var(--espacio-mediano);
+    text-align: center;
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-secundario);
+}
+
+.button:focus {
+    background-color: var(--color-texto-secundario);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--color-secundario);
+}
+
+.button:focus {
+    outline: 2px solid var(--color-secundario);
+}
+
+.portada-mobile {
+    width: 100%;
+    min-height: 100vh;
+    background: url(../asessed/giftmovimiento/portadanew.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Estilos para las tarjetas de información */
+.galeria-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--espacio-mediano);
+    margin-top: 40px;
+}
+.card-mobile {
+    position: relative;
+    background-color: var(--fondo-general);
+    padding: var(--espacio-mediano);
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 12px;
+    margin-bottom: var(--espacio-mediano);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.nuevo-mobile {
+    position: absolute;
+    top: -12px;
+    right: -5px;
+    background-color: var(--color-secundario);
+    color: var(--color-encabezados);
+    padding: var(--espacio-pequeño) var(--espacio-mediano);
+    border: 1px solid var(--color-texto-secundario);
+    border-radius: 12px;
+    margin-bottom: var(--espacio-mediano);
+}
+.alquileres-mobile {
+width: 100%;
+}
+.box-alquileres-mobile {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+}
+.box-alquileres article {
+    background-color: var(--fondo-general);
+    padding: var(--espacio-mediano);
+    border: 3px solid var(--color-texto-secundario);
+    border-radius: 12px;
+    margin-bottom: var(--espacio-mediano);
+}
+.box-imagenes-mobile {
+    display: flex;
+    gap: var(--espacio-mediano);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box-imagenes figure {
+    border-style: outset;
+    border-color: var(--color-texto-secundario);
+    border-width: 10px;
+}
+.ubication-mobile {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+ 
+
+
+  
+  
+/* Estilos para las tablas */
+.tablares-mobile {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: var(--color-encabezados);
+    color: #FFFFFF;
+    padding: var(--espacio-mediano);
+    text-align: left;
+    font-family: var(--fuente-titulos);
+}
+
+td {
+    padding: var(--espacio-mediano);
+    border-bottom: 2px solid var(--color-texto-secundario);
+    font-family: var(--fuente-texto);
+}
+
+/* Grupo de cada campo del formulario */
+.grupo-formulario-mobile {
+    margin-bottom: var(--espacio-mediano);
+}
+
+/* La etiqueta se coloca obligatoriamente arriba del campo */
+.grupo-formulario label {
+    display: block;
+    margin-bottom: var(--espacio-pequeño);
+
+    color: var(--color-encabezados);
+}
+.formulario-grd-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+
+.box-celnumber-mobile {
+display:flex;
+justify-content: space-around;
+gap: var(--espacio-grande);
+}
+
+
+/* Campos de texto a lo ancho disponible */
+.grupo-formulario input,
+.grupo-formulario select,
+.grupo-formulario textarea {
+    width: 80%;
+    padding: var(--espacio-mediano);
+    /* Relleno generoso para escribir cómodamente */
+}
+
+
+/*form button,
+.btn-enviar-mobile {
+    display: inline-block;
+    margin-top: var(--espacio-mediano);
+    background-color: var(--color-primario);
+    color: #FFFFFF;
+    padding: var(--espacio-pequeño) var(--espacio-mediano);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+    */
+
+/*boton flotante de whatsapp*/
+.whatsapp-flotante-mobile {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-primario);
+    color: white;
+    padding: var(--espacio-pequeño) var(--espacio-mediano);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-flotante:hover {
+    background-color: var(--color-secundario);
+}
+
+.whatsapp-flotante:focus {
+    background-color: var(--color-texto-secundario);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+nav ul  {
+    display: flex;
+    gap: var(--espacio-grande);
+    flex-wrap: wrap;
+}
+
+
+    
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flota-mobile {
+
+
+    width: 100%;
+}
+
+.box-flota-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--espacio-mediano);
+    margin: var(--espacio-mediano) 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+}
+
+.box-flota-mobile article {
+    background-color: var(--fondo-general);
+    padding: var(--espacio-mediano);
+    border: 3px solid var(--color-texto-secundario);
+    border-radius: 12px;
+    margin-bottom: var(--espacio-mediano);
+}
+
+.box-flota-mobile img {
+    margin: var(--espacio-mediano) 0;
+    width: 100%;
+    height: 50%;
+    border-radius: 12px;
+}
+
+.tarjeta-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+/*respoonsive escritorio*/ 
+
+
+
+
+
+
+
 
 /* Estilos generales */
 body {
@@ -76,7 +410,7 @@ a.menu:focus {
 }
 
 /* Estilos para los botones */
-.button {
+.button-mobile {
     border-radius: 20px;
     background-color: var(--color-primario);
     color: white;
@@ -105,7 +439,7 @@ a.menu:focus {
     outline: 2px solid var(--color-secundario);
 }
 
-.portada {
+.portada-mobile {
     width: 100%;
     min-height: 100vh;
     background: url(../asessed/giftmovimiento/portadanew.gif);
@@ -115,13 +449,13 @@ a.menu:focus {
 }
 
 /* Estilos para las tarjetas de información */
-.galeria {
+.galeria-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--espacio-mediano);
     margin-top: 40px;
 }
-.card {
+.card-mobile {
     position: relative;
     background-color: var(--fondo-general);
     padding: var(--espacio-mediano);
@@ -133,7 +467,7 @@ a.menu:focus {
    align-items: center;
 }
 
-.nuevo {
+.nuevo-mobile {
     position: absolute;
     top: -12px;
     right: -5px;
@@ -144,10 +478,10 @@ a.menu:focus {
     border-radius: 12px;
     margin-bottom: var(--espacio-mediano);
 }
-.alquileres {
+.alquileres-mobile {
 width: 100%;
 }
-.box-alquileres {
+.box-alquileres-mobile {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -158,7 +492,7 @@ width: 100%;
     border-radius: 12px;
     margin-bottom: var(--espacio-mediano);
 }
-.box-imagenes {
+.box-imagenes-mobile {
     display: flex;
     gap: var(--espacio-mediano);
     margin-bottom: 50px;
@@ -172,7 +506,7 @@ width: 100%;
     border-color: var(--color-texto-secundario);
     border-width: 10px;
 }
-.ubication {
+.ubication-mobile {
     display: flex;
     flex-direction: column;
     
@@ -184,7 +518,7 @@ width: 100%;
   
   
 /* Estilos para las tablas */
-.tablares{
+.tablares-mobile {
     overflow-x: auto;
 }
 table {
@@ -207,7 +541,7 @@ td {
 }
 
 /* Grupo de cada campo del formulario */
-.grupo-formulario {
+.grupo-formulario-mobile {
     margin-bottom: var(--espacio-mediano);
 }
 
@@ -218,13 +552,13 @@ td {
 
     color: var(--color-encabezados);
 }
-.formulario-grd {
+.formulario-grd-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     
 }
 
-.box-celnumber {
+.box-celnumber-mobile {
 display:flex;
 justify-content: space-around;
 gap: var(--espacio-grande);
@@ -242,7 +576,7 @@ gap: var(--espacio-grande);
 
 
 /*form button,
-.btn-enviar {
+.btn-enviar-mobile {
     display: inline-block;
     margin-top: var(--espacio-mediano);
     background-color: var(--color-primario);
@@ -256,7 +590,7 @@ gap: var(--espacio-grande);
     */
 
 /*boton flotante de whatsapp*/
-.whatsapp-flotante {
+.whatsapp-flotante-mobile {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -303,13 +637,13 @@ footer {
     flex-wrap: wrap;
 }
 
-.flota {
+.flota-mobile {
 
 
     width: 100%;
 }
 
-.box-flota {
+.box-flota-mobile {
     display: flex;
     flex-wrap: wrap;
     gap: var(--espacio-mediano);
@@ -333,20 +667,9 @@ footer {
     border-radius: 12px;
 }
 
-.tarjeta {
+.tarjeta-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-@media (min-width: 368px) {
-    }
-   
-    
-    @media (max-width: 768px) {
-   
-    }
-    @media (max-width: 1280px) {
-   
-    }
-
