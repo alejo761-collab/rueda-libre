@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre - Campaña Nocturna</title>
-    <!-- CSS compilado por Tailwind CLI -->
+    <!-- CSS compilado y minificado por Tailwind CLI -->
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-fondo-crema text-encabezados dark:bg-encabezados dark:text-fondo-crema font-texto min-h-screen flex flex-col transition-colors duration-300">
@@ -20,6 +20,7 @@
             <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gris-asfalto dark:text-fondo-crema/80">
                 <a href="#inicio" class="hover:text-primario dark:hover:text-amarillo-farol transition">Inicio</a>
                 <a href="#rutas" class="hover:text-primario dark:hover:text-amarillo-farol transition">Rutas</a>
+                <a href="#planes" class="hover:text-primario dark:hover:text-amarillo-farol transition">Planes</a>
                 <a href="#como-funciona" class="hover:text-primario dark:hover:text-amarillo-farol transition">¿Cómo funciona?</a>
                 <!-- Enlace hacia la página principal de reservas -->
                 <a href="../reservas.html" class="text-secundario font-semibold hover:underline">Reserva tu bici</a>
@@ -50,8 +51,8 @@
                     <a href="#rutas" class="btn-primario">
                         Ver Rutas
                     </a>
-                    <a href="../reservas.html" class="btn-secundario">
-                        Reserva tu bici
+                    <a href="#planes" class="btn-secundario">
+                        Ver Planes
                     </a>
                 </div>
             </div>
@@ -171,7 +172,89 @@
             </div>
         </section>
 
-        <!-- 3. CÓMO FUNCIONA -->
+        <!-- 3. PLANES RUEDA NOCTURNA -->
+        <section id="planes" class="py-12 md:py-16 lg:py-24 border-b border-gris-asfalto/10 dark:border-slate-800">
+            <div class="max-w-6xl mx-auto px-4 space-y-8 md:space-y-12">
+                
+                <div class="text-center space-y-2 md:space-y-3">
+                    <span class="inline-block bg-primario/20 text-primario dark:text-amarillo-farol border border-primario/40 text-[10px] md:text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider font-titulos">
+                        Tarifas y Paquetes
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-titulos text-encabezados dark:text-fondo-crema">Planes Rueda Nocturna</h2>
+                    <p class="text-gris-asfalto dark:text-fondo-crema/80 text-sm md:text-base max-w-xl mx-auto">Elige la modalidad perfecta para vivir tu experiencia nocturna en la ciudad.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-stretch">
+
+                    <!-- Plan Individual -->
+                    <div class="bg-white dark:bg-slate-900 border-2 border-gris-asfalto/20 dark:border-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 md:p-8 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <h3 class="text-xl md:text-2xl font-bold font-titulos text-encabezados dark:text-fondo-crema">Individual</h3>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-extrabold font-titulos text-primario dark:text-amarillo-farol">$55.000</span>
+                                <span class="block text-xs text-gris-asfalto dark:text-fondo-crema/60">por persona</span>
+                            </div>
+                            <ul class="space-y-2.5 pt-2 border-t border-gris-asfalto/10 dark:border-slate-800 text-sm text-gris-asfalto dark:text-fondo-crema/80">
+                                <li class="flex items-center gap-2">✓ Bicicleta y casco</li>
+                                <li class="flex items-center gap-2">✓ Luces LED y chaleco</li>
+                                <li class="flex items-center gap-2">✓ Guía certificado</li>
+                                <li class="flex items-center gap-2">✓ Hidratación</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-auto">
+                            <a href="#inscripcion" class="btn-primario w-full !py-2.5 !text-xs md:!text-sm">Elegir Individual</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Pareja (Destacado como "Más elegido") -->
+                    <div class="bg-white dark:bg-slate-900 border-4 border-secundario dark:border-amarillo-farol rounded-2xl shadow-xl transition-all duration-300 p-6 md:p-8 flex flex-col justify-between relative transform lg:-translate-y-2">
+                        <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-secundario text-encabezados font-extrabold text-[11px] px-3.5 py-1 rounded-full uppercase tracking-wider shadow">
+                            ⭐ Más elegido
+                        </span>
+                        
+                        <div class="space-y-4 pt-2">
+                            <h3 class="text-xl md:text-2xl font-bold font-titulos text-encabezados dark:text-fondo-crema">Pareja</h3>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-extrabold font-titulos text-secundario dark:text-amarillo-farol">$99.000</span>
+                                <span class="block text-xs text-gris-asfalto dark:text-fondo-crema/60">las dos personas</span>
+                            </div>
+                            <ul class="space-y-2.5 pt-2 border-t border-gris-asfalto/10 dark:border-slate-800 text-sm text-gris-asfalto dark:text-fondo-crema/80">
+                                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                                <li class="flex items-center gap-2">✓ Foto del recorrido</li>
+                                <li class="flex items-center gap-2">✓ Snack para dos</li>
+                                <li class="flex items-center gap-2">✓ Prioridad en la ruta</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-auto">
+                            <a href="#inscripcion" class="btn-secundario w-full !py-2.5 !text-xs md:!text-sm">Elegir Pareja</a>
+                        </div>
+                    </div>
+
+                    <!-- Plan Grupo (4 a 8 personas) -->
+                    <div class="bg-white dark:bg-slate-900 border-2 border-gris-asfalto/20 dark:border-slate-800 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 p-6 md:p-8 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <h3 class="text-xl md:text-2xl font-bold font-titulos text-encabezados dark:text-fondo-crema">Grupo (4 a 8)</h3>
+                            <div>
+                                <span class="text-2xl md:text-3xl font-extrabold font-titulos text-primario dark:text-amarillo-farol">$45.000</span>
+                                <span class="block text-xs text-gris-asfalto dark:text-fondo-crema/60">por persona</span>
+                            </div>
+                            <ul class="space-y-2.5 pt-2 border-t border-gris-asfalto/10 dark:border-slate-800 text-sm text-gris-asfalto dark:text-fondo-crema/80">
+                                <li class="flex items-center gap-2">✓ Todo lo del plan Individual</li>
+                                <li class="flex items-center gap-2">✓ Guía exclusivo</li>
+                                <li class="flex items-center gap-2">✓ Horario a elección</li>
+                                <li class="flex items-center gap-2">✓ Fotos del grupo</li>
+                            </ul>
+                        </div>
+                        <div class="pt-6 mt-auto">
+                            <a href="#inscripcion" class="btn-primario w-full !py-2.5 !text-xs md:!text-sm">Elegir Grupo</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. CÓMO FUNCIONA -->
         <section id="como-funciona" class="py-12 md:py-16 lg:py-24 border-b border-gris-asfalto/10 dark:border-slate-800">
             <div class="max-w-6xl mx-auto px-4 space-y-8 md:space-y-12">
                 <div class="text-center space-y-2 md:space-y-3">
@@ -207,7 +290,7 @@
             </div>
         </section>
 
-        <!-- 4. INSCRIPCIÓN (FORMULARIO VALIDADO) -->
+        <!-- 5. INSCRIPCIÓN (FORMULARIO VALIDADO) -->
         <section id="inscripcion" class="py-12 md:py-16 lg:py-24 bg-gris-asfalto/5 dark:bg-slate-900/50">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white dark:bg-slate-900 border-2 border-amarillo-farol/60 dark:border-slate-700 p-6 md:p-10 rounded-2xl shadow-xl space-y-8">
@@ -329,6 +412,7 @@
                 <ul class="space-y-1 text-xs">
                     <li><a href="#inicio" class="hover:text-primario dark:hover:text-amarillo-farol transition">Inicio</a></li>
                     <li><a href="#rutas" class="hover:text-primario dark:hover:text-amarillo-farol transition">Rutas disponibles</a></li>
+                    <li><a href="#planes" class="hover:text-primario dark:hover:text-amarillo-farol transition">Planes y tarifas</a></li>
                     <li><a href="#como-funciona" class="hover:text-primario dark:hover:text-amarillo-farol transition">Proceso de inscripción</a></li>
                     <li><a href="../reservas.html" class="hover:text-secundario transition">Reservar bicicleta</a></li>
                 </ul>

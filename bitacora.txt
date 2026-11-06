@@ -329,4 +329,22 @@ BITÁCORA: CONSTRUCCIÓN Y VALIDACIÓN DEL FORMULARIO DE INSCRIPCIÓN
   - Acompañantes fuera de rango (-1 o 4): Las restricciones `min="0"` y `max="3"` bloquean la subida de datos erróneos.
 * Formulario completo y navegación por teclado: 
   - Se recorrió la totalidad de los inputs, selects, radios y checkbox utilizando exclusivamente la tecla `Tab` (para avanzar) y `Shift + Tab` (para retroceder), con indicadores de foco claros en color amarillo farol (`ring-amarillo-farol`).
-  
+
+  PUNTO 11
+
+  ====================================================================
+BITÁCORA: IMPLEMENTACIÓN DE SECCIÓN "PLANES RUEDA NOCTURNA"
+====================================================================
+- Cronómetro de ejecución: 35 minutos (Dentro del límite de 45 min).
+
+1. VALIDACIONES DE BOX MODEL Y LAYOUT EN DEVTOLS
+--------------------------------------------------------------------
+* Grid y Altura de Cards: 
+  - Se aplicó `grid grid-cols-1 lg:grid-cols-3` acompañado de `items-stretch`. 
+  - Mediante inspección en DevTools (Computed), se constató que las tres cards comparten idéntico ancho y un relleno vertical/horizontal simétrico (`p-6 md:p-8`).
+* Flexbox Interno: 
+  - Cada card utiliza `flex flex-col justify-between` y un contenedor superior estructurado, logrando que los botones queden perfectamente alineados en la misma línea horizontal en pantallas de escritorio (`lg`).
+* Plan Pareja Destacado: 
+  - Se aplicó un borde más grueso (`border-4 border-secundario dark:border-amarillo-farol`), una ligera elevación visual (`transform lg:-translate-y-2`) y una insignia flotante absoluta ("Más elegido") sin alterar el flujo estructural de las otras dos cards.
+* Modo Oscuro y Accesibilidad: 
+  - Todos los textos secundarios y beneficios mantienen un contraste superior a 4.5:1 sobre los fondos oscuros (`dark:bg-slate-900` y `dark:text-fondo-crema/80`).
