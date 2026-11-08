@@ -313,8 +313,7 @@ footer {
     flex-wrap: wrap;
     gap: var(--espacio-mediano);
     margin: var(--espacio-mediano) 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+   
 }
 
 .box-flota-mobile article {
