@@ -354,5 +354,17 @@ BITÁCORA: IMPLEMENTACIÓN DE SECCIÓN "PLANES RUEDA NOCTURNA"
 
                                              SEMANA 3 VERDADERA
 
+      dia 1
+      punto 2   
+   REGISTRO DE VERIFICACIÓN DE TAILWIND CSS 
 
-                                             
+Clase en uso (ej. `bg-amber-400`):
+   - Encontrada en `src/output.css`: SÍ.
+   - Detalle: Se generó la regla CSS `.bg-amber-400 { --tw-bg-opacity: 1; background-color: rgb(251 191 36 / var(--tw-bg-opacity)); }`.
+
+Clase NO usada (ej. `bg-pink-500`):
+   - Encontrada en `src/output.css`: NO.
+
+¿Por qué ocurre esto?
+   Ocurre porque el motor JIT (Just-in-Time) de Tailwind CLI escanea los archivos declarados en `tailwind.config.js` y solo compila en `output.css` las clases que detecta en el HTML. De esta forma ignora todo el CSS innecesario (como `bg-pink-500`) para que la página sea liviana. 
+                                      

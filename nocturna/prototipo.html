@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rueda Nocturna · Prototipo</title>
-  <!-- Play CDN de Tailwind: solo para prototipar -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="./src/output.css" rel="stylesheet">
 </head>
 <body class="bg-slate-950">
   <section class="bg-slate-900 text-white px-6 py-16 text-center">
@@ -16,7 +15,24 @@
       <li>3 rutas</li>
       <li>Desde $55.000</li>
     </ul>
-    <a href="#inscripcion" class="inline-block mt-8 bg-amber-400 text-slate-900 font-semibold px-6 py-3 rounded-full hover:bg-amber-300 focus:outline-hidden focus:ring-2 focus:ring-amber-200">Inscríbete</a>
+    <div class="mt-8 flex flex-wrap justify-center gap-4 items-center">
+      
+      <!-- Variante 1: Primario -->
+      <button class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-6 py-3 rounded-full transition-colors focus:outline-none focus:ring-4 focus:ring-amber-200">
+        Inscribirme ahora
+      </button>
+
+      <!-- Variante 2: Secundario -->
+      <button class="bg-blue-600 hover:bg-blue-700 text-slate-200 font-bold px-6 py-3 rounded-full border border-slate-700 transition-colors focus:outline-none focus:ring-4 focus:ring-slate-500">
+        Ver rutas
+      </button>
+
+      <!-- Variante 3: Peligro / Cancelar -->
+      <button class="bg-red-600 hover:bg-red-500 text-white font-bold px-6 py-3 rounded-full transition-colors focus:outline-none focus:ring-4 focus:ring-red-300">
+        Cancelar cupo
+      </button>
+
+    </div>
   </section>
 </body>
 </html>
