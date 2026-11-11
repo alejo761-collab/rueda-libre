@@ -367,4 +367,9 @@ Clase NO usada (ej. `bg-pink-500`):
 
 ¿Por qué ocurre esto?
    Ocurre porque el motor JIT (Just-in-Time) de Tailwind CLI escanea los archivos declarados en `tailwind.config.js` y solo compila en `output.css` las clases que detecta en el HTML. De esta forma ignora todo el CSS innecesario (como `bg-pink-500`) para que la página sea liviana. 
-                                      
+
+
+       PUNTO 4
+
+       radius: rounded-lg, rounded-2xl
+      colores:escala de grises,indigo,emerald,amber,blue, red                               
