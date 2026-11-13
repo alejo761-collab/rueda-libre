@@ -334,7 +334,7 @@ BITÁCORA: CONSTRUCCIÓN Y VALIDACIÓN DEL FORMULARIO DE INSCRIPCIÓN
 
   PUNTO 11
 
-  ====================================================================
+  ===================================================================
 BITÁCORA: IMPLEMENTACIÓN DE SECCIÓN "PLANES RUEDA NOCTURNA"
 ====================================================================
 - Cronómetro de ejecución: 35 minutos (Dentro del límite de 45 min).

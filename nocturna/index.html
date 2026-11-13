@@ -13,7 +13,7 @@
 <body class="bg-slate-950">
     <header>
         <section
-            class="  flex flex-row-reverse justify-between items-center flex-wrap  gap-5 bg-slate-900 text-white px-6 py-16 text-center">
+            class="  flex flex-row-reverse lg:justify-between md:justify-center flex-wrap  gap-5 bg-slate-900 text-white px-6 py-16 text-center">
             <div class=" flex flex-col gap-4">
                 <div>
                     <p class="uppercase tracking-wide text-sm text-amber-300 font-semibold">Nuevo · Jueves a sábado</p>
@@ -36,17 +36,18 @@
     <main class="">
         <section class="flex flex-col items-center justify-between gap-4">
             <h2 class=" text-2xl md:text-4xl text-center  text-amber-500 font-bold   ">Nuestras Rutas nocturnas</h2>
-            <p class="text-slate-300 text-lg"> Explora la ciudad en la noche, bienvenidos a nuestra Rueda Nocturna, explora y reserva ya </p>
+            <p class="text-slate-300 text-lg"> Explora la ciudad en la noche, bienvenidos a nuestra Rueda Nocturna,
+                explora y reserva ya </p>
         </section>
 
-        <section id="rutas" class="py-20 grid place-items-center  grid-cols-1 md:grid-cols-3 gap-4 ">
+        <section id="rutas" class="py-20  px-3 grid place-items-center  grid-cols-1 md:grid-cols-3 gap-4 ">
 
             <article class=" max-w-sm bg-slate-200 border border-orange-400 rounded-xl shadow-md overflow-hidden 
     transition-shadow hover:shadow-xl hover:shadow-gray-500">
                 <!-- <div class=" flex flex-col gap-5 flex-wrap"> -->
-                         <div class=" flex flex-col gap-5 flex-wrap">
-                  <img class="w-full h-56 object-cover" src="../asessed/img/ruta-luces.jpg"
-                    alt="nuestra ruta de luces del centro">
+                <div class=" flex flex-col gap-5 flex-wrap">
+                    <img class="w-full h-56 object-cover" src="../asessed/img/ruta-luces.jpg"
+                        alt="nuestra ruta de luces del centro">
                     <span
                         class="inline-block  bg-green-500/80 text-slate-900  text-sm font-bold px-4 py-1 rounded-2xl">Fácil</span>
                     <h3 class="text-xl font-serif font-bold text-slate-900">Luces del centro</h3>
@@ -74,8 +75,8 @@
             <article class="max-w-sm bg-slate-200 border border-orange-400 rounded-xl shadow-md overflow-hidden transition-shadow
     hover:shadow-xl hover:shadow-gray-500">
                 <div class="flex flex-col gap-5 flex-wrap">
-                   <img class="w-full h-56 object-cover" src="../asessed/img/ruta-miradores.jpg"
-                    alt="nuestra ruta de miradores">
+                    <img class="w-full h-56 object-cover" src="../asessed/img/ruta-miradores.jpg"
+                        alt="nuestra ruta de miradores">
                     <span
                         class="inline-block bg-orange-600 text-black text-sm font-bold px-4 py-1 rounded-2xl">Medio</span>
                     <h3 class="text-xl font-serif font-bold text-slate-900">Miradores de la Ciudad</h3>
@@ -103,10 +104,10 @@
             </article>
             <article class="max-w-sm bg-slate-200 border border-orange-400 rounded-xl shadow-md overflow-hidden transition-shadow 
 hover:shadow-xl hover:shadow-gray-500">
-               
-                <div class="flex flex-col gap-5 flex-wrap" >
-                     <img class="w-full h-56 object-cover" src="../asessed/img/ruta-luna.jpg"
-                    alt="Nuestra Ruta luna en las palmas">
+
+                <div class="flex flex-col gap-5 flex-wrap">
+                    <img class="w-full h-56 object-cover" src="../asessed/img/ruta-luna.jpg"
+                        alt="Nuestra Ruta luna en las palmas">
                     <span
                         class="inline-block bg-red-700/90 text-black text-sm font-bold px-4 py-1 rounded-2xl">Difícil</span>
                     <h3 class="text-xl font-serif font-bold text-slate-900">Luna en Las Palmas</h3>
@@ -133,32 +134,40 @@ hover:shadow-xl hover:shadow-gray-500">
             </article>
 
         </section>
-        <section class="px-5   space-y-10">
+        <section class="px-6   space-y-10">
             <h2 class=" mt-36 text-4xl text-amber-400  text-center"> Como Funciona </h2>
-            <p class="text-center text-lg mt-5 text-slate-300">Cuatro sencillos pasos para vivir la experiencia nocturna</p>
-            <div class=" grid grid-cols-1 md:grid-cols-4 gap-4" >
+            <p class="text-center text-lg mt-5 text-slate-300">Cuatro sencillos pasos para vivir la experiencia nocturna
+            </p>
+            <div class=" grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
-                    <h4 class="  text-slate-200  font-bold text-xl text-center mt-4 border-b-2 border-slate-300 pb-4">Elige tu ruta </h4>   
-                    <p  class="text-sky-300 font-semibold text-center py-3 ">Escoge la ruta que se dapte mejor a tu rendimiento fisico </p>
+                    <h4 class="  text-slate-200  font-bold text-xl text-center mt-4 border-b-2 border-slate-300 pb-4">
+                        Elige tu ruta </h4>
+                    <p class="text-sky-300 font-semibold text-center py-3 ">Escoge la ruta que se dapte mejor a tu
+                        rendimiento fisico </p>
 
                 </div>
                 <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
-                    <h4 class="text-slate-200 font-bold text-center text-xl mt-4 border-b-2 border-slate-300 pb-4">Inscribite</h4>
-                    <p class="text-sky-300 font-semibold text-center py-3">dale al botón de inscribirte depués de ver la ruta que te gusta</p>
+                    <h4 class="text-slate-200 font-bold text-center text-xl mt-4 border-b-2 border-slate-300 pb-4">
+                        Inscribite</h4>
+                    <p class="text-sky-300 font-semibold text-center py-3">dale al botón de inscribirte depués de ver la
+                        ruta que te gusta</p>
                 </div>
-                    <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
-                        <h4 class="text-slate-200 font-bold text-center text-xl mt-4 border-b-2 border-slate-300 pb-4">Recoge tu equipo</h4>
-                        <p class="text-sky-300 font-semibold text-center py-3"> Ya casi todo esta listo, ven a Rueda libre el dia
-                            y fecha que seleccionaste y reclama tu casco,bicicleta y luces
-                        </p>
-                    </div>
-                    <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
-                        <h4 class="text-slate-200 font-bold text-center text-xl mt-4 
+                <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
+                    <h4 class="text-slate-200 font-bold text-center text-xl mt-4 border-b-2 border-slate-300 pb-4">
+                        Recoge tu equipo</h4>
+                    <p class="text-sky-300 font-semibold text-center py-3"> Ya casi todo esta listo, ven a Rueda libre
+                        el dia
+                        y fecha que seleccionaste y reclama tu casco,bicicleta y luces
+                    </p>
+                </div>
+                <div class=" p-4 rounded-lg bg-sky-950/40 border border-sky-800/60 border-l-4 border-l-sky-500">
+                    <h4 class="text-slate-200 font-bold text-center text-xl mt-4 
                         border-b-2 border-slate-300 pb-4">Rueda</h4>
-                         <p class="text-sky-300 font-semibold text-center py-3">Listo sal a rodar con tu grupo y disfruta de un excelente recorrido</p>
-                    </div>
-
+                    <p class="text-sky-300 font-semibold text-center py-3">Listo sal a rodar con tu grupo y disfruta de
+                        un excelente recorrido</p>
                 </div>
+
+            </div>
         </section>
     </main>
     <section class="bg-slate-800/50">
