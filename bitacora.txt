@@ -372,4 +372,41 @@ Clase NO usada (ej. `bg-pink-500`):
        PUNTO 4
 
        radius: rounded-lg, rounded-2xl
-      colores:escala de grises,indigo,emerald,amber,blue, red                               
+      colores:escala de grises,indigo,emerald,amber,blue, red 
+
+
+      DIA 2
+
+      Creamos la estructura en nocturna/index.html usando etiquetas claras y un contenedor central.
+
+Acomodamos el menú superior (logo a un lado, enlaces y botón al otro).
+
+Pusimos las rutas en 3 columnas y los 4 pasos en cuadrícula.
+
+Armamos el pie en 3 bloques con los componentes del kit y subimos los cambios.
+
+Versión Celular y Tablet (Responsive):
+
+Adaptamos el diseño para que primero se vea bien en celular y crezca según la pantalla.
+
+Rutas: 1 columna (celular) ➔ 2 (tablet) ➔ 3 (computadora).
+
+Pasos: 1 columna (celular) ➔ 2 (tablet) ➔ 4 (computadora).
+
+Menú: En celular ocultamos los enlaces y dejamos solo el botón "Inscríbete".
+
+Pruebas: Verificamos que todo encaje bien en 360px, 768px, 1024px y 1280px, y guardamos el resultado final.
+
+
+
+ULTIMO PUNTO
+
+Hice la prueba montando la flota con Bootstrap 5 y la verdad es que al principio rinde porque ya trae todo armado, pero uno pierde el control del diseño y termina cargando un montón de archivos pesados que ni usamos.
+Midiendo en el DevTools (Network), el CSS de Tailwind con el --minify nos quedó pesando apenas 29.4 kB y cero JavaScript, mientras que Bootstrap chupa mucho más espacio por carga de red innecesaria.   
+Comparando los cuatro puntos:
+- Curva de aprendizaje: Bootstrap es más fácil al inicio; Tailwind toma un tris de práctica pillarle el tiro a las clases.
+- Personalización: Con Bootstrap todo se ve genérico y cuesta cambiar colores propios; Tailwind da libertad total sin enredos.
+- Tamaño final: Tailwind gana clarísimo con sus 29.4 kB limpios.   
+- Casos de uso: Bootstrap para cosas rápidas y Tailwind para un sitio profesional y real.
+Recomendación: Quedarnos con Tailwind CSS para todo el sitio de Rueda Libre. Nos da la libertad de dejarlo a nuestro gusto, el modo oscuro queda melo y lo mejor es que al cliente le carga volando en el celular.
+
