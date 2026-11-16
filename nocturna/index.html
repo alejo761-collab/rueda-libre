@@ -26,13 +26,15 @@
                         cuando se
                         encienden las luces</p>
                 </div>
-               <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-sm px-2 py-3 flex justify-between items-center">
-                    <a href="#rutas" class="bton-secundario">
+                <nav
+                    class="fixed top-0 left-0 w-full z-50 backdrop-blur-md shadow-sm px-2 py-3 flex justify-between items-center">
+                    <a href="#rutas" class="bton-secundario hidden md:flex">
                         Rutas</a>
-                         <a href="#inscripcion" class="bton-inscribete">
+                    <a href="#inscripcion" class="bton-inscribete">
                         Inscribete</a>
-                        <a href="../index.html"><img class="w-full h-10 " src="../assets/giftmovimiento/portadanew.gif" alt="Nuestro logo" >Rueda Libre </a>
-                        <a href="../paginas/reservas.html" class="bton-secundario">Reserva tu bici</a>
+                    <a href="../index.html"><img class="w-full h-10 hidden md:flex " src="../assets/giftmovimiento/portadanew.gif"
+                            alt="Nuestro logo">Rueda Libre </a>
+                    <a href="../paginas/reservas.html" class="bton-secundario hidden md:flex">Reserva tu bici</a>
                 </nav>
             </div>
             <figure class="max-w-4xl">
@@ -47,7 +49,7 @@
                 explora y reserva ya </p>
         </section>
 
-        <section 
+        <section
             class="py-20  px-3 grid place-items-center  grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3    gap-4 ">
 
             <article class=" max-w-sm bg-slate-200 border border-orange-400 rounded-xl shadow-md overflow-hidden 
@@ -188,103 +190,179 @@ hover:shadow-xl  hover:shadow-black dark:hover:shadow-gray-500">
 
 
 
-    <section class=" flex flex-col p-10 mt-10 gap-6 flex-wrap md:justify-center mx-auto  w-fit  bg-slate-800/50 border-2 border-slate-400 rounded-2xl shadow-md
+        <section class=" flex flex-col p-10  mt-10 gap-6 flex-wrap md:justify-center mx-auto  w-fit  bg-slate-800/50 border-2 border-slate-400 rounded-2xl shadow-md
              transition-shadow hover:shadow-md hover:shadow-gray-400">
-        <h2 class="text-2xl font-semibold  text-center border-b pb-2">Fórmulario</h2>
-        <form id="inscripcion" action="procesar_reserva.php" method="post" class=" space-y-5 max-w-xl">
-            <fieldset>
+            <h2 class="text-2xl font-semibold  text-center border-b pb-2">Fórmulario</h2>
+            <form id="inscripcion" action="procesar_reserva.php" method="post" class=" space-y-5 max-w-xl">
+                <fieldset>
 
-                <legend class="text-lg  text-Amarillo_Farol border-b pb-2 ">Datos Personales</legend>
+                    <legend class="text-lg  text-Amarillo_Farol border-b pb-2 ">Datos Personales</legend>
+                    <div>
+                        <label for="name" class="text-sm text-slate-950 dark:text-slate-300"> Nombre Completo</label>
+                        <input type="text" id="name" placeholder="pepito perez" class="w-full bg-slate-900
+                 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
+                 focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                        <p class="text-xs ">Digita aquí tu nombre</p>
+
+
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-2">
+                            <label for="email" class="text-sm text-slate-950 dark:text-slate-400">Correo
+                                Electrónico</label>
+                            <input type="email" id="email" placeholder="example@gmail.com" class="w-full bg-slate-900
+                 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
+                 focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                            <p class="text-xs ">Digita aquí tu correo electrónico</p>
+                        </div>
+                        <div class="space-y-2">
+                            <label for="tel" class="text-sm text-slate-950 dark:text-slate-400">Número de
+                                celular</label>
+                            <input type="tel" id="tel" placeholder="300 123 4567" pattern="3[0,9]{9}"
+                                title="el numero debe de empezar por 3 y tener maximo 10 caracteres " required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
+                    focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                            <p class=" text-xs ">Dejanos tu número de contacto</p>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <div class=" flex flex-col justify-center gap-6">
+                        <legend class="text-lg  text-Amarillo_Farol border-b pb-2 ">Datos de Reserva</legend>
+                        <div class="space-y-2">
+                            <label for="ruta" class="text-sm text-slate-950 dark:text-slate-400 px-20"> Elige tu Ruta a
+                                seguir</label>
+                            <select name="ruta" id="ruta" required
+                                class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                                <option value="luces_del_centro">Luces del Centro</option>
+                                <option value="miradores_de_la_ciudad">MIradores de la ciudad</option>
+                                <option value="lna_en_las_palmas">Luna en las Palmas</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <label for="acompañantes"
+                                class="text-sm text-slate-950 dark:text-slate-400 px-20">Acompañantes</label>
+                            <input type="number" id="acompañamiento" name="acompañantes " min="1" max="3" required
+                                class=" dark:bg-slate-900 dark:text-slate-300 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
+                    focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                        </div>
+                        <div>
+                            <label for="nivel" class="text-sm text-slate-950 dark:text-slate-400 px-20"> Nivel de
+                                Experiencia</label>
+                            <select name="niveles" id="nivel" required
+                                class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                                <option value="principiante">Principiante</option>
+                                <option value="Moderado">Moderado</option>
+                                <option value="Avanzado">Avanzado</option>
+
+                            </select>
+
+                        </div>
+                        <div>
+                            <label for="nivel" class="text-sm text-slate-950 dark:text-slate-400 px-20">
+                                Dias Disponibles</label>
+                            <select name="niveles" id="nivel" required
+                                class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
+                                <option value="jueves">jueves</option>
+                                <option value="viernes">viernes</option>
+                                <option value="sabado">sabado</option>
+
+                            </select>
+
+                        </div>
+                        <div>
+                            <label class="flex items-center space-x-2 cursor-pointer"> Tienes bicicleta?
+                                <input type="radio" name="bicicleta" value="si"
+                                    class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                                <span class="text-sm text-gray-700">Sí</span>
+                            </label>
+
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="radio" name="bicicleta" value="no"
+                                    class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
+                                <span class="text-sm text-gray-700">No</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button type="submit" class="bton-inscribete">Inscríbete</button>
+            </form>
+        </section>
+
+        <h2 class="text-2xl text-center">Planes Rueda Nocturna</h2>
+
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-16">
+
+            <div
+                class="  flex flex-col items-start  flex-wrap gap-6 px-20 w-full mx-auto  h-auto  rounded-2xl 
+                border-2 border-slate-600 bg-slate-800/50 shadow-xl transition-shadow hover:shadow-gray-500 hover:shadow-xl ">
+                <div class="mt-8">
+                    <h3 class="text-2xl dark:bg-Amarillo_Farol/50 rounded-2xl space-y-2 px-4 "> Individual</h3>
+                </div>
                 <div>
-                    <label for="name" class="text-sm text-slate-950 dark:text-slate-300"> Nombre Completo</label>
-                    <input type="text" id="name" placeholder="pepito perez" class="w-full bg-slate-900
-                 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
-                 focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                    <p class="text-xs ">Digita aquí tu nombre</p>
-
-
+                    <span class="text-2xl  text-Amarillo_Farol"> 55.000</span>
+                    <p class="border-b-2 border-color_secundario pb-4">Por persona</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                    <div class="space-y-2">
-                        <label for="email" class="text-sm text-slate-950 dark:text-slate-400">Correo Electrónico</label>
-                        <input type="email" id="email" placeholder="example@gmail.com" class="w-full bg-slate-900
-                 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
-                 focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                        <p class="text-xs ">Digita aquí tu correo electrónico</p>
-                    </div>
-                    <div class="space-y-2">
-                        <label for="tel" class="text-sm text-slate-950 dark:text-slate-400">Número de celular</label>
-                        <input type="tel" id="tel" placeholder="300 123 4567" pattern="3[0,9]{9}"
-                            title="el numero debe de empezar por 3 y tener maximo 10 caracteres " required class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
-                    focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                        <p class=" text-xs ">Dejanos tu número de contacto</p>
-                    </div>
+                <ul class=" list-disc space-y-3 text-slate-800 dark:text-slate-300">
+                    <li>Bicicleta y casco</li>
+                    <li>Luces LED y chaleco</li>
+                    <li>Guía certificado</li>
+                    <li>Hidratación</li>
+
+                </ul>
+                <div class="py-5">
+                    <a href="#inscripcion" class="bton-inscribete">Elegir individual</a>
                 </div>
-
-            </fieldset>
-            <fieldset>
-                <div class=" flex flex-col justify-center gap-6">
-                    <legend class="text-lg  text-Amarillo_Farol border-b pb-2 ">Datos de Reserva</legend>
-                    <div class="space-y-2">
-                        <label for="ruta" class="text-sm text-slate-950 dark:text-slate-400 px-20"> Elige tu Ruta a
-                            seguir</label>
-                        <select name="ruta" id="ruta" required
-                            class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                            <option value="luces_del_centro">Luces del Centro</option>
-                            <option value="miradores_de_la_ciudad">MIradores de la ciudad</option>
-                            <option value="lna_en_las_palmas">Luna en las Palmas</option>
-
-                        </select>
-                    </div>
-                    <div >
-                        <label for="acompañantes"
-                            class="text-sm text-slate-950 dark:text-slate-400 px-20">Acompañantes</label>
-                        <input type="number" id="acompañamiento" name="acompañantes " min="1" max="3" required class=" dark:bg-slate-900 dark:text-slate-300 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 placeholder-slate-500
-                    focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                    </div>
-                    <div>
-                        <label for="nivel" class="text-sm text-slate-950 dark:text-slate-400 px-20"> Nivel de
-                            Experiencia</label>
-                        <select name="niveles" id="nivel" required
-                            class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                            <option value="principiante">Principiante</option>
-                            <option value="Moderado">Moderado</option>
-                            <option value="Avanzado">Avanzado</option>
-
-                        </select>
-
-                    </div>
-                     <div>
-                        <label for="nivel" class="text-sm text-slate-950 dark:text-slate-400 px-20">
-                            Dias Disponibles</label>
-                        <select name="niveles" id="nivel" required
-                            class="dark:bg-slate-950 dark:text-slate-300 bg-slate-400  focus:ring-4 focus:ring-indigo-400 focus:border-indigo-400 transition">
-                            <option value="jueves">jueves</option>
-                            <option value="viernes">viernes</option>
-                            <option value="sabado">sabado</option>
-
-                        </select>
-
-                    </div>
-                    <div>
-                        <label class="flex items-center space-x-2 cursor-pointer"> Tienes bicicleta?
-                            <input type="radio" name="bicicleta" value="si"
-                                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
-                            <span class="text-sm text-gray-700">Sí</span>
-                        </label>
-
-                        <label class="flex items-center space-x-2 cursor-pointer">
-                            <input type="radio" name="bicicleta" value="no"
-                                class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
-                            <span class="text-sm text-gray-700">No</span>
-                        </label>
-                    </div>
+            </div>
+            <div
+                class=" relative flex flex-col items-start flex-wrap gap-6 w-full h-auto px-20 mx-auto rounded-2xl 
+            border-2 border-amber-500 bg-slate-800/50 shadow-xl transition-shadow hover:shadow-amber-500 hover:shadow-xl">
+                <span
+                    class="absolute -top-3 left-1/2 -translate-x-1/2 bg-Amarillo_Farol text-slate-900 text-xs font-bold uppercase px-4 py-1 rounded-full whitespace-nowrap">
+                    Más Elegido
+                </span>
+                <div class="mt-8">
+                    <h3 class="text-2xl dark:bg-Amarillo_Farol/50 rounded-2xl space-y-2 px-4 "> Pareja </h3>
                 </div>
-            </fieldset>
-            <button type="submit" class="bton-inscribete">Inscríbete</button>
-        </form>
-    </section>
-        </main>
+                <div>
+                    <span class="text-2xl  text-Amarillo_Farol"> 99.000</span>
+                    <p class="border-b-2 border-color_secundario pb-4">Las dos personas </p>
+                </div>
+                <ul class=" list-disc space-y-3 text-slate-800 dark:text-slate-300">
+                    <li>Todo el plan individual</li>
+                    <li>Fotos del recorrido</li>
+                    <li>Snacks para dos</li>
+                    <li>Prioridad en la ruta</li>
+
+                </ul>
+                <div class="py-5">
+                    <a href="#inscripcion" class="bton-inscribete">Elegir Pareja</a>
+                </div>
+            </div>
+             <div
+                class="  flex flex-col items-start  flex-wrap gap-6 px-20 w-full mx-auto  h-auto  rounded-2xl 
+                border-2 border-slate-600 bg-slate-800/50 shadow-xl transition-shadow hover:shadow-gray-500 hover:shadow-xl ">
+                <div class="mt-8">
+                    <h3 class="text-2xl dark:bg-Amarillo_Farol/50 rounded-2xl space-y-2 px-4 "> Grupo (4 a 8)</h3>
+                </div>
+                <div>
+                    <span class="text-2xl  text-Amarillo_Farol"> 45.000</span>
+                    <p class="border-b-2 border-color_secundario pb-4">Por persona</p>
+                </div>
+                <ul class=" list-disc space-y-3 text-slate-800 dark:text-slate-300">
+                    <li>Todo el plan individual</li>
+                    <li>Guía exclusiva</li>
+                    <li>Horario a elección</li>
+                    <li>Fotos del grupo</li>
+
+                </ul>
+                <div class="py-5">
+                    <a href="#inscripcion" class="bton-inscribete">Elegir individual</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <section class="dark:bg-slate-950/50 ">
         <hr class="mt-8">
         <footer class="flex flex-row flex-wrap justify-around mt-6 gap-8 text-slate-200 ">

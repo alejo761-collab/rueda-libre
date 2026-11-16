@@ -46,32 +46,16 @@ h1{
 }
 
 
-#active a {
-    color: var(--color-primario);
+
+#menu-mobile a.active {
+  color: var(--color-primario);
+  font-weight: 600;
 }
 
 /* Estilos para el menú de navegación */
-.menu-mobile a {
-    color:white;
-    font-weight: 600;
-}
-
-
-
-.menu a:hover {
-    color: var(--color-secundario);
-}
-
-.menu a:focus {
-    color: var(--color-primario);
-}
-
-a.menu:hover {
-    color: var(--color-secundario);
-}
-
-a.menu:focus {
-    color: var(--color-primario);
+#menu-mobile a:hover,
+#menu-mobile a:focus-visible {
+  color: var(--color-secundario);
 }
 
 /* Estilos para los botones */
