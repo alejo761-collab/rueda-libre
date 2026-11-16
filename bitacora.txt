@@ -410,3 +410,8 @@ Comparando los cuatro puntos:
 - Casos de uso: Bootstrap para cosas rápidas y Tailwind para un sitio profesional y real.
 Recomendación: Quedarnos con Tailwind CSS para todo el sitio de Rueda Libre. Nos da la libertad de dejarlo a nuestro gusto, el modo oscuro queda melo y lo mejor es que al cliente le carga volando en el celular.
 
+DIA 3
+
+punto 9
+
+La verdad puse el cronometro pero igualmente me demore una hora y media en hacer este punto 
