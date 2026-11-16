@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Aquí encontraras las tarifas de alquiler de bicicletas en Medellín más baratas y de la mejor calidad">
-    <title> "Rueda Libre | Reservas" </title>
+    <title> Rueda Libre | Reservas </title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +22,11 @@
             <h1>Rueda Libre</h1>
 
             <nav>
-                <ul class="menu-mobile" >
-                    <li id="active"><a href="/paginas/reservas.html">Reservas</a></li>
+                <ul id="menu-mobile" >
+                    <li><a href="/paginas/reservas.html" class="active">Reservas</a></li>
                     <li><a href="../index.html">Volver a la página principal</a></li>
                     <li><a href="tarifas.html">Ver tarifas y rutas</a></li>
+                     <li><a href="../nocturna/index.html">Rueda Nocturna</a></li>
                 </ul>
             </nav>
         </header>
@@ -70,7 +71,7 @@
                             <input type="text" id="nombre" name="nombre" minlength="3" required>
                         </div>
 
-                        <div class="grupo-formulario-mobile class="box-celnumber-mobile" ">
+                        <div class="grupo-formulario-mobile>
                             <div>
                                 <label for="documento">Numero de Documento</label><br>
                                 <input type="number" id="documento" name="documento" pattern="[0-9]{6,10}"

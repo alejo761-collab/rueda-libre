@@ -88,26 +88,26 @@ a.menu:focus {
     cursor: pointer;
 }
 
-.button:hover {
+.button-mobile:hover {
     background-color: var(--color-secundario);
 }
 
-.button:focus {
+.button-mobile:focus {
     background-color: var(--color-texto-secundario);
 }
 
-.button:focus-visible {
+.button-mobile:focus-visible {
     outline: 2px solid var(--color-secundario);
 }
 
-.button:focus {
+.button-mobile:focus {
     outline: 2px solid var(--color-secundario);
 }
 
 .portada-mobile {
     width: 100%;
     min-height: 100vh;
-    background: url(../asessed/giftmovimiento/portadanew.gif);
+    background: url(../assets/giftmovimiento/portadanew.gif);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -380,19 +380,20 @@ h1{
 }
 
 
-#active a {
-    color: var(--color-primario);
+.activo,
+#menu-mobile a.active {
+  color: var(--color-primario);
+  font-weight: 600;
 }
 
 /* Estilos para el menú de navegación */
-.menu a {
-    color:white;
-    font-weight: 600;
+#menu-mobile a:hover,
+#menu-mobile a:focus-visible {
+  color: var(--color-secundario);
 }
 
 
-
-.menu a:hover {
+/* .menu a:hover {
     color: var(--color-secundario);
 }
 
@@ -406,7 +407,7 @@ a.menu:hover {
 
 a.menu:focus {
     color: var(--color-primario);
-}
+} */
 
 /* Estilos para los botones */
 .button-mobile {
@@ -441,7 +442,7 @@ a.menu:focus {
 .portada-mobile {
     width: 100%;
     min-height: 100vh;
-    background: url(../asessed/giftmovimiento/portadanew.gif);
+    background: url(../assets/giftmovimiento/portadanew.gif);
     background-size: cover;
     background-repeat: no-repeat;
 

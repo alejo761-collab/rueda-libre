@@ -12,9 +12,13 @@
 }
 @layer components{
     .bton-inscribete{
-    @apply  block px-6 py-3 text-center font-semibold bg-color_primario dark:bg-amber-400 text-slate-900 rounded-full hover:bg-color_secundario dark:hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-slate-800;
+    @apply  px-6 py-3 text-center w-fit font-semibold bg-color_primario dark:bg-amber-400 text-slate-900 rounded-full hover:bg-color_secundario dark:hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-slate-800;
 
 
+}
+.bton-secundario{
+    @apply inline-block px-10 py-3 bg-color_primario  dark:bg-blue-600 hover:bg-color_secundario  dark:hover:bg-blue-700 text-slate-200 font-semibold rounded-full border border-slate-700 transition-colors focus:outline-none 
+                        focus:ring-4 focus:ring-slate-500;
 }
 
 }
