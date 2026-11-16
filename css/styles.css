@@ -246,7 +246,7 @@ gap: var(--espacio-grande);
     background-color: var(--color-primario);
     color: white;
     padding: var(--espacio-pequeño) var(--espacio-mediano);
-    border-radius: 50px;
+    border-radius: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -395,7 +395,7 @@ a.menu:focus {
 
 /* Estilos para los botones */
 .button-mobile {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: var(--color-primario);
     color: white;
     border: none;
@@ -437,7 +437,7 @@ a.menu:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--espacio-mediano);
-    margin-top: 40px;
+    margin-top: 2.5rem;
 }
 .card-mobile {
     position: relative;
@@ -479,8 +479,8 @@ width: 100%;
 .box-imagenes-mobile {
     display: flex;
     gap: var(--espacio-mediano);
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 3.125rem;
+    margin-top: 3.125rem;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -581,7 +581,7 @@ gap: var(--espacio-grande);
     background-color: var(--color-primario);
     color: white;
     padding: var(--espacio-pequeño) var(--espacio-mediano);
-    border-radius: 50px;
+    border-radius:3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
